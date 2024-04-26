@@ -35,7 +35,7 @@ mv ../data/ID.tsv ../data/disease_ID.tsv
 python ../src/preprocess_clinicaltrials_metadata.py \
 -infile /mnt/ufs18/rs-032/FishEvoDevoGeno/Hao/Cross_platform_text_based_classification/data/testing_data/clinicaltrials/2023-12-06_ctg-studies.csv \
 -outdir ../data/ \
--select_n 20000 \
+-select_n 5000 \
 -ent_type word
 mv ../data/desc.tsv ../data/clinicaltrials_desc.tsv
 mv ../data/ID.tsv ../data/clinicaltrials_ID.tsv
