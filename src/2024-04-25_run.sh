@@ -98,3 +98,13 @@ python ../src/predict.py \
 -train_embed ../data/disease_desc_embedding.npz \
 -model ../results/MONDO_0004981__model.pkl \
 -out ../results
+
+# reformat models
+mkdir ../bins
+python ../src/reformat_model.py \
+/mnt/gs21/scratch/groups/compbio/2024-03-29_nbc/models/mode-full_test__task-disease__instance-study__preprocess-l2__lemmatize-False/method-no_cluster__ent_type-word__model-LR__c-1.0__l1r-0.4 \
+../bins/
+
+python ../src/reformat_model.py \
+/mnt/gs21/scratch/groups/compbio/2024-03-29_nbc/models/mode-full_test__task-tissue__instance-sample__preprocess-l2__lemmatize-False/method-no_cluster__ent_type-word__model-LR__c-1.0__l1r-0.4 \
+../bins/
