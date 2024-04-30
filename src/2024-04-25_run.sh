@@ -108,3 +108,63 @@ python ../src/reformat_model.py \
 python ../src/reformat_model.py \
 /mnt/gs21/scratch/groups/compbio/2024-03-29_nbc/models/mode-full_test__task-tissue__instance-sample__preprocess-l2__lemmatize-False/method-no_cluster__ent_type-word__model-LR__c-1.0__l1r-0.4 \
 ../bins/
+
+# check into prediction see why models cannot distinguish among some similar terms
+# frontal lobe
+python ../src/predict.py \
+-input ../data/tissue_desc_processed.tsv \
+-id ../data/tissue_ID.tsv \
+-input_embed ../data/tissue_desc_embedding.npz \
+-train_embed ../data/tissue_desc_embedding.npz \
+-model ../bins/UBERON_0016525__model.pkl \
+-out ../results
+
+# frontal cortex
+~/anaconda3/envs/txt2onto2/bin/python ../src/predict.py \
+-input ../data/tissue_desc_processed.tsv \
+-id ../data/tissue_ID.tsv \
+-input_embed ../data/tissue_desc_embedding.npz \
+-train_embed ../data/tissue_desc_embedding.npz \
+-model ../bins/UBERON_0001870__model.pkl \
+-out ../results
+
+# bronchial epithelial cell
+~/anaconda3/envs/txt2onto2/bin/python ../src/predict.py \
+-input ../data/tissue_desc_processed.tsv \
+-id ../data/tissue_ID.tsv \
+-input_embed ../data/tissue_desc_embedding.npz \
+-train_embed ../data/tissue_desc_embedding.npz \
+-model ../bins/CL_0002328__model.pkl \
+-out ../results
+
+python ../src/predict.py \
+-input ../data/disease_desc_processed.tsv \
+-id ../data/disease_ID.tsv \
+-input_embed ../data/disease_desc_embedding.npz \
+-train_embed ../data/disease_desc_embedding.npz \
+-model ../bins/MONDO_0005034__model.pkl \
+-out ../results
+
+python ../src/predict.py \
+-input ../data/disease_desc_processed.tsv \
+-id ../data/disease_ID.tsv \
+-input_embed ../data/disease_desc_embedding.npz \
+-train_embed ../data/disease_desc_embedding.npz \
+-model ../bins/MONDO_0005148__model.pkl \
+-out ../results
+
+python ../src/predict.py \
+-input ../data/disease_desc_processed.tsv \
+-id ../data/disease_ID.tsv \
+-input_embed ../data/disease_desc_embedding.npz \
+-train_embed ../data/disease_desc_embedding.npz \
+-model ../bins/MONDO_0005097__model.pkl \
+-out ../results
+
+python ../src/predict.py \
+-input ../data/disease_desc_processed.tsv \
+-id ../data/disease_ID.tsv \
+-input_embed ../data/disease_desc_embedding.npz \
+-train_embed ../data/disease_desc_embedding.npz \
+-model ../bins/MONDO_0018906__model.pkl \
+-out ../results
