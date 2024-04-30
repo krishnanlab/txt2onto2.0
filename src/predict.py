@@ -63,13 +63,18 @@ if __name__ == '__main__':
                         type=str)
     args = parser.parse_args()
 
+    print('loading data')
     t0 = time()
 
     # get task name from input
     onto = Path(args.model).resolve().stem.split('__')[0]
 
     # load samples
-    samples = np.loadtxt(args.id, delimiter='\t', dtype=str)
+    samples = []
+    with open(args.id) as f:
+        for line in f:
+            samples.append(line.rstrip().split('\t')[0])
+    samples = np.array(samples)
 
     # load model
     with open(args.model, 'rb') as f:
@@ -88,6 +93,12 @@ if __name__ == '__main__':
 
     # load input for prediction
     desc_df = pd.read_csv(args.input, header=None, index_col=None, sep='\t')
+
+    # runtime
+    print('took %.2f min to load data' % ((time()-t0)/60))
+
+    print('predicting labels')
+    t0 = time()
 
     # calculate TF for input text
     tfidf_calculator = TfidfCalculator(np.array(desc_df[0]))
@@ -112,22 +123,27 @@ if __name__ == '__main__':
     # predict for all samples
     preds = model.predict(input_tfidf)
 
-    # get and save related words
-    # get index of predictive word features
-    related_word_idx = np.argwhere(coef > 0).reshape(-1)
-    # get mapping of words in the given text to predictive words in models
-    max_ind_matrix_filtered = max_ind_matrix[:, related_word_idx].T
-    related_word_dict = {}
-    for idx, ind_matrix in enumerate(max_ind_matrix_filtered):
-        # For each predictive words in the corpus, find related words in external data
-        related_words = tf * np.tile(ind_matrix[None, :], (tf.shape[0], 1))
-        # get index of samples with related words
-        related_sample_idxs = np.argwhere(np.sum(related_words, axis=1) > 0).reshape(-1)
-        # get sample and words
-        for related_sample_idx in related_sample_idxs:
-            related_word_dict.setdefault(samples[related_sample_idx], [])
-            related_word_dict[samples[related_sample_idx]].extend(list(input_features[related_words[related_sample_idx] > 0]))
+    # runtime
+    print('took %.2f min to predict' % ((time()-t0)/60))
 
+    print('retrieving predictive words')
+    t0 = time()
+    # get and save related words
+    related_word_idx = np.argwhere(coef > 0).reshape(-1)
+    related_words = sparse_mat_mul(tf, max_ind_matrix[:, related_word_idx])
+    related_words_idxs = np.argwhere(related_words > 0)
+    max_ind_matrix_filtered = max_ind_matrix[:, related_word_idx].T
+
+    related_word_dict = {}
+    for i, j in zip(related_words_idxs[:, 0], related_words_idxs[:, 1]):
+        related_words_idx = np.argwhere((tf[i] * max_ind_matrix_filtered[j]) > 0).reshape(-1)
+        related_word_dict.setdefault(samples[i], [])
+        related_word_dict[samples[i]].extend(input_features[related_words_idx])
+
+    # runtime
+    print('took %.2f min to retrieve predictive words' % ((time()-t0)/60))
+
+    print('saving output')
     # save prediction
     df = pd.DataFrame(zip(samples, preds, np.log2(preds/prior))).sort_values(by=1, ascending=False)
     df[3] = [','.join(related_word_dict[i]) if i in related_word_dict else '' for i in df[0]]
@@ -139,4 +155,4 @@ if __name__ == '__main__':
     )
 
     # runtime
-    print('took %.2f min to predict %s for %s instances' % ((time()-t0)/60, onto, len(samples)))
+    print('took %.2f min to load, predict, retrieve predictive words and save %s for %s instances' % ((time()-t0)/60, onto, len(samples)))
