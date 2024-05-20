@@ -30,11 +30,11 @@ if __name__ == '__main__':
     gs_df = pd.read_csv(args.gs, header=0, index_col=0)
     if args.onto not in list(gs_df.columns):
         raise Exception(f'Provided ontology term {args.onto} does not exist')
-    
+
     # load id
     ID_list = list(pd.read_csv(args.id, header=None, index_col=None, sep='\t')[0])
     if len(ID_list) != len(set(ID_list)):
-        raise Exception (f'ID provided in {args.id} is not unique\n')
+        raise Exception(f'ID provided in {args.id} is not unique\n')
 
     # load text
     desc_df = pd.read_csv(args.text, header=None, index_col=None, sep='\t')
