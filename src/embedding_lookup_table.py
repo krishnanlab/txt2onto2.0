@@ -127,7 +127,7 @@ if __name__ == '__main__':
     elif args.model.lower() == 'bert':
         model_name = "bert-large-uncased"
     else:
-        raise ValueError("Invalid model name. Currently 'pubmedbert_abs', 'pubmedbert_full', 'bert' are supported.")
+        raise ValueError("Invalid model name. Currently 'biomedbert_abs', 'biomedbert_full', and 'bert' are supported.")
 
     embeddings_array = generate_embeddings(model_name, words, batch_size=args.batch_size)
 
