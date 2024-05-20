@@ -1,0 +1,1167 @@
+ID,name,log2(auprc/prior),num_of_pos
+MONDO:0000167,Huntington disease and related disorders,5.841352896201352,35
+MONDO:0000248,dengue shock syndrome,9.517669388133813,3
+MONDO:0000270,lower respiratory tract disorder,3.9844081310560657,170
+MONDO:0000314,primary bacterial infectious disease,6.607595291876909,26
+MONDO:0000315,commensal bacterial infectious disease,8.519636252843213,4
+MONDO:0000368,extrapulmonary tuberculosis,9.513727595952435,3
+MONDO:0000376,respiratory system cancer,4.4021094828017215,122
+MONDO:0000382,respiratory system benign neoplasm,6.938599455335857,2
+MONDO:0000383,benign reproductive system neoplasm,3.765960069196508,8
+MONDO:0000385,benign digestive system neoplasm,0.0,6
+MONDO:0000402,small cell carcinoma,5.608809242675524,9
+MONDO:0000425,X-linked disease,0.0,5
+MONDO:0000426,autosomal dominant disease,4.154924997906195,22
+MONDO:0000429,autosomal genetic disease,2.7394963170148987,53
+MONDO:0000430,mature T-cell and NK-cell non-Hodgkin lymphoma,8.519636252843213,10
+MONDO:0000437,cerebellar ataxia,7.675565049502063,10
+MONDO:0000448,paraganglioma,9.521600439723729,2
+MONDO:0000450,secondary progressive multiple sclerosis,9.501837184902296,3
+MONDO:0000451,primary progressive multiple sclerosis,7.501837184902297,3
+MONDO:0000458,proneural glioblastoma,0.0,2
+MONDO:0000462,eye adnexa disorder,6.689858236319245,18
+MONDO:0000473,arterial disorder,5.539253718192036,46
+MONDO:0000500,tongue squamous cell carcinoma,9.505811553919594,3
+MONDO:0000502,villous adenoma,7.936637939002571,2
+MONDO:0000508,syndromic intellectual disability,0.0,3
+MONDO:0000510,synucleinopathy,4.986292571895014,10
+MONDO:0000548,ovarian clear cell cancer,7.509775004326937,4
+MONDO:0000568,autoimmune disorder of central nervous system,5.602836857458347,55
+MONDO:0000569,autoimmune disorder of endocrine system,6.34706765716587,15
+MONDO:0000586,autoimmune disorder of exocrine system,9.521600439723729,3
+MONDO:0000588,autoimmune disorder of gastrointestinal tract,6.142745276751529,16
+MONDO:0000589,autoimmune disorder of musculoskeletal system,6.148499692846849,38
+MONDO:0000591,intrinsic cardiomyopathy,6.019577520377099,31
+MONDO:0000592,specific developmental disorder,0.0,2
+MONDO:0000594,pervasive developmental disorder,5.579013668438424,56
+MONDO:0000605,hypersensitivity reaction disease,5.795803468025538,27
+MONDO:0000607,primary cutaneous T-cell non-Hodgkin lymphoma,9.513727595952435,5
+MONDO:0000612,lymphatic system cancer,5.399024891635193,6
+MONDO:0000615,progesterone-receptor positive breast cancer,5.756941160931444,5
+MONDO:0000616,progesterone-receptor negative breast cancer,7.402933095050159,13
+MONDO:0000618,Her2-receptor negative breast cancer,5.605289558544507,14
+MONDO:0000621,immune system cancer,3.6818796104509657,197
+MONDO:0000624,benign female reproductive system neoplasm,0.0,6
+MONDO:0000627,benign endocrine neoplasm,8.258566033889933,8
+MONDO:0000628,central nervous system organ benign neoplasm,9.523561956057012,5
+MONDO:0000629,cardiovascular organ benign neoplasm,0.0,2
+MONDO:0000632,uterine benign neoplasm,9.523561956057012,4
+MONDO:0000633,sensory organ benign neoplasm,9.523561956057012,3
+MONDO:0000634,thoracic benign neoplasm,0.0,4
+MONDO:0000636,musculoskeletal system benign neoplasm,8.26052755022322,8
+MONDO:0000637,musculoskeletal system cancer,3.700397365862544,155
+MONDO:0000640,central nervous system primitive neuroectodermal neoplasm,9.517669388133813,3
+MONDO:0000646,ovarian benign neoplasm,8.521600439723727,2
+MONDO:0000648,nervous system benign neoplasm,7.527477006060396,8
+MONDO:0000649,sensory system cancer,7.418133714582898,10
+MONDO:0000653,integumentary system cancer,3.604739213026255,36
+MONDO:0000761,syndrome caused by partial chromosomal deletion,6.484792385892438,14
+MONDO:0000762,syndrome caused by partial chromosomal duplication,9.523561956057012,6
+MONDO:0000771,allergic respiratory disease,5.948367231584678,7
+MONDO:0000812,vertebral column disorder,0.0,6
+MONDO:0000833,bone remodeling disease,9.523561956057012,4
+MONDO:0000837,bone resorption disease,9.523561956057012,3
+MONDO:0000870,childhood acute lymphoblastic leukemia,6.517325541936635,17
+MONDO:0000871,T-cell childhood acute lymphocytic leukemia,8.088788238716907,8
+MONDO:0000872,B-cell childhood acute lymphoblastic leukemia,6.963951126803132,11
+MONDO:0000931,endometrial disorder,6.745204730693876,22
+MONDO:0000942,corneal disorder,9.523561956057012,6
+MONDO:0001014,chronic leukemia,6.333591586037624,36
+MONDO:0001040,nasopharyngitis,9.523561956057012,6
+MONDO:0001056,gastric cancer,6.743982178841603,22
+MONDO:0001071,intellectual disability,6.446623842336677,11
+MONDO:0001106,kidney failure,6.714245517666122,3
+MONDO:0001142,salivary gland disorder,0.0,4
+MONDO:0001149,microcephaly,8.523561956057012,4
+MONDO:0001165,tongue disorder,8.523561956057012,4
+MONDO:0001166,nephritis,0.0,2
+MONDO:0001187,urinary bladder cancer,7.932706887412656,10
+MONDO:0001208,acute respiratory failure,4.273672926280141,2
+MONDO:0001223,parathyroid gland disorder,0.0,2
+MONDO:0001225,opioid abuse,9.521600439723729,2
+MONDO:0001249,trachoma,9.519636252843211,3
+MONDO:0001292,autonomic nervous system disorder,7.714245517666122,7
+MONDO:0001336,familial hyperlipidemia,8.521600439723727,2
+MONDO:0001347,facioscapulohumeral muscular dystrophy,8.523561956057012,8
+MONDO:0001358,bronchial disorder,6.933343729884362,21
+MONDO:0001406,peripheral nervous system neoplasm,5.0953970227925565,15
+MONDO:0001411,synostosis,9.523561956057012,2
+MONDO:0001416,female reproductive organ cancer,5.156348104493384,65
+MONDO:0001487,intrahepatic bile duct cancer,9.513727595952435,4
+MONDO:0001502,retroperitoneum carcinoma,9.515699838284045,5
+MONDO:0001516,spinal muscular atrophy,8.106562940444883,9
+MONDO:0001531,blood coagulation disease,0.0,4
+MONDO:0001572,leiomyoma,8.26052755022322,6
+MONDO:0001577,respiratory syncytial virus infectious disease,7.934673752122056,2
+MONDO:0001593,rectal disorder,9.523561956057012,4
+MONDO:0001612,carotid stenosis,9.521600439723729,2
+MONDO:0001627,dementia,4.203091153569246,106
+MONDO:0001657,brain cancer,4.36013105790085,24
+MONDO:0001708,pulmonary sarcoidosis,0.0,2
+MONDO:0001711,hepatic encephalopathy,0.0,2
+MONDO:0001713,inherited aplastic anemia,9.521600439723729,2
+MONDO:0001734,tuberous sclerosis,9.523561956057012,2
+MONDO:0001854,lacrimal apparatus disorder,9.523561956057012,3
+MONDO:0001933,endocrine pancreas disorder,5.835173814939059,40
+MONDO:0002009,major depressive disorder,6.533342976849598,26
+MONDO:0002022,disorder of orbital region,4.640318839846173,62
+MONDO:0002025,psychiatric disorder,3.1083686614023933,292
+MONDO:0002032,colon carcinoma,5.977517345542893,14
+MONDO:0002037,pleural disorder,9.523561956057012,5
+MONDO:0002038,head and neck carcinoma,6.17681560250514,23
+MONDO:0002039,cognitive disorder,3.790628974573352,166
+MONDO:0002046,alcohol abuse,7.369597346278677,7
+MONDO:0002049,thrombocytopenia,9.523561956057012,4
+MONDO:0002050,depressive disorder,6.157174019876881,29
+MONDO:0002051,integumentary system disorder,3.8310685017328514,98
+MONDO:0002052,lymphadenitis,0.0,3
+MONDO:0002071,supratentorial cancer,6.058237769496515,4
+MONDO:0002081,musculoskeletal system disorder,2.7094516568226497,304
+MONDO:0002082,endocrine gland neoplasm,3.949849137438588,146
+MONDO:0002095,vascular cancer,8.517669388133811,7
+MONDO:0002100,cardiovascular cancer,8.517669388133811,7
+MONDO:0002108,thyroid cancer,6.892672225610403,19
+MONDO:0002116,malignant exocrine pancreas neoplasm,6.673543136507785,24
+MONDO:0002118,urinary system disorder,4.6492295387374085,69
+MONDO:0002120,neuroendocrine carcinoma,6.547289668677466,13
+MONDO:0002129,bone cancer,3.8764291253282783,145
+MONDO:0002142,undifferentiated pleomorphic sarcoma,6.515699838284043,5
+MONDO:0002145,disorder of sexual differentiation,0.0,2
+MONDO:0002146,hypogonadism,9.521600439723729,5
+MONDO:0002149,reproductive system cancer,4.323933810014421,126
+MONDO:0002150,hypothalamic disorder,8.523561956057012,7
+MONDO:0002165,rectal neoplasm,9.523561956057012,4
+MONDO:0002175,degeneration of macula and posterior pole,8.258566033889933,9
+MONDO:0002217,central nervous system sarcoma,8.515699838284043,2
+MONDO:0002229,ovarian epithelial tumor,6.369536763204324,24
+MONDO:0002232,nasal cavity disorder,9.523561956057012,6
+MONDO:0002236,ocular cancer,7.521600439723727,6
+MONDO:0002243,hemorrhagic disease,0.0,2
+MONDO:0002245,blood platelet disease,7.527477006060396,8
+MONDO:0002249,thrombocytosis disease,5.064130337419716,4
+MONDO:0002251,hepatitis,6.870857864363762,22
+MONDO:0002254,syndromic disease,3.3089718009561486,138
+MONDO:0002256,cervix disorder,7.449561374613236,16
+MONDO:0002259,gonadal disorder,5.072733473515777,59
+MONDO:0002263,female reproductive system disorder,4.135454381951129,97
+MONDO:0002267,obstructive lung disease,7.207166881383289,17
+MONDO:0002269,gastroenteritis,6.716207033999408,26
+MONDO:0002271,colon adenocarcinoma,7.37213954084113,10
+MONDO:0002277,arteriosclerosis disorder,5.714245517666122,6
+MONDO:0002278,benign colon neoplasm,6.3536369546147,4
+MONDO:0002280,anemia,7.356574237694254,13
+MONDO:0002311,retinal vascular disorder,8.521600439723727,2
+MONDO:0002320,congenital nervous system disorder,2.533729154628659,20
+MONDO:0002321,sensory peripheral neuropathy,9.521600439723729,5
+MONDO:0002329,testicular disorder,0.0,4
+MONDO:0002332,splenic disorder,6.938599455335857,6
+MONDO:0002334,hematopoietic and lymphoid system neoplasm,2.9437792081821708,361
+MONDO:0002352,larynx cancer,9.517669388133813,3
+MONDO:0002356,pancreas disorder,4.763453630331087,72
+MONDO:0002363,papilloma,7.936637939002571,4
+MONDO:0002366,autonomic nervous system neoplasm,7.7021726853655474,6
+MONDO:0002367,kidney cancer,5.804305828663697,42
+MONDO:0002406,dermatitis,5.721041278698169,43
+MONDO:0002427,cerebellar disorder,6.224449590333746,30
+MONDO:0002428,protozoa infectious disease,7.451211111832329,10
+MONDO:0002429,idiopathic interstitial pneumonia,9.519636252843211,5
+MONDO:0002436,nasal disorder,6.531381460516312,7
+MONDO:0002447,endometrial carcinoma,4.940197666811953,7
+MONDO:0002459,type IV hypersensitivity disease,0.0,3
+MONDO:0002462,glomerulonephritis,0.0,2
+MONDO:0002480,endometrioid tumor,6.936637939002571,2
+MONDO:0002488,intraductal breast neoplasm,6.064130337419716,5
+MONDO:0002491,substance abuse,7.601564468058286,11
+MONDO:0002494,substance-related disorder,6.349023153729271,15
+MONDO:0002501,brain glioblastoma,5.763858817763022,8
+MONDO:0002512,papillary adenocarcinoma,6.476761428183537,14
+MONDO:0002513,kidney benign neoplasm,7.936637939002571,2
+MONDO:0002514,hepatobiliary neoplasm,4.697381517087578,92
+MONDO:0002515,hepatobiliary disorder,4.298823333663105,118
+MONDO:0002516,digestive system cancer,2.9441765298422053,283
+MONDO:0002525,inherited lipid metabolism disorder,4.74412786561703,10
+MONDO:0002529,skin squamous cell carcinoma,0.0,4
+MONDO:0002531,skin neoplasm,3.6077145969085422,16
+MONDO:0002532,squamous cell neoplasm,4.824060078187294,67
+MONDO:0002545,spinal cord disorder,5.189283949290482,69
+MONDO:0002546,schwannoma,0.0,2
+MONDO:0002547,nerve sheath neoplasm,7.525520809095069,9
+MONDO:0002561,lysosomal storage disease,3.39231742277876,6
+MONDO:0002562,demyelinating disease,5.605235207235866,55
+MONDO:0002567,tracheal disorder,7.076102979085792,17
+MONDO:0002601,teratoma,0.0,2
+MONDO:0002602,central nervous system disorder,1.8584764070656057,751
+MONDO:0002614,bone inflammation disease,5.559116033515868,49
+MONDO:0002616,mesenchymal cell neoplasm,3.984846439133132,26
+MONDO:0002635,periodontal disorder,9.523561956057012,5
+MONDO:0002637,histiocytosis,0.0,2
+MONDO:0002654,uterine disorder,5.730800375824621,42
+MONDO:0002656,skin carcinoma,0.0,5
+MONDO:0002657,breast disorder,3.875807067211275,190
+MONDO:0002659,uveal cancer,9.517669388133813,4
+MONDO:0002661,uveal disorder,9.523561956057012,6
+MONDO:0002665,extrahepatic bile duct adenocarcinoma,4.731803889050427,6
+MONDO:0002691,liver cancer,4.628269943510911,92
+MONDO:0002714,central nervous system cancer,4.155853081080596,136
+MONDO:0002715,uterine cancer,5.928281817413863,26
+MONDO:0002720,sella turcica neoplasm,8.523561956057012,8
+MONDO:0002728,rhabdoid tumor,5.34577483684173,4
+MONDO:0002732,lung benign neoplasm,8.521600439723727,2
+MONDO:0002752,ovarian adenocarcinoma,7.365633895871334,11
+MONDO:0002771,pulmonary fibrosis,7.581721432161298,9
+MONDO:0002785,skull base neoplasm,8.523561956057012,8
+MONDO:0002797,childhood medulloblastoma,9.515699838284045,3
+MONDO:0002813,lipomatous cancer,6.936637939002571,13
+MONDO:0002814,adrenal carcinoma,9.515699838284045,5
+MONDO:0002816,adrenal cortex disorder,8.521600439723727,8
+MONDO:0002817,adrenal gland cancer,9.517669388133813,6
+MONDO:0002869,heart valve disorder,0.0,2
+MONDO:0002887,bile duct disorder,8.523561956057012,8
+MONDO:0002898,skin cancer,4.8499436760621535,14
+MONDO:0002908,glucose metabolism disease,5.826858043222239,42
+MONDO:0002909,hyperglycemia,8.521600439723727,3
+MONDO:0002913,cerebellar neoplasm,7.034983991760199,19
+MONDO:0002915,childhood infratentorial neoplasm,9.523561956057012,4
+MONDO:0002917,disorder of pilosebaceous unit,0.0,2
+MONDO:0002921,congenital structural myopathy,7.20163386116965,2
+MONDO:0002924,smooth muscle cancer,7.570136808027947,10
+MONDO:0002926,clear cell sarcoma,9.515699838284045,3
+MONDO:0002928,carcinosarcoma,0.0,2
+MONDO:0002930,kidney sarcoma,9.513727595952435,4
+MONDO:0002974,cervical cancer,7.061989904357622,16
+MONDO:0002977,autoimmune disorder of the nervous system,5.6619435159962,56
+MONDO:0003001,seminoma,0.0,2
+MONDO:0003004,macular degeneration,8.26052755022322,10
+MONDO:0003014,rhinitis,9.523561956057012,6
+MONDO:0003050,lung large cell carcinoma,7.179909090014935,6
+MONDO:0003059,bile duct cancer,5.211401637418471,6
+MONDO:0003060,biliary tract cancer,5.211401637418471,6
+MONDO:0003061,benign muscle neoplasm,8.26052755022322,6
+MONDO:0003062,intestinal benign neoplasm,6.3536369546147,4
+MONDO:0003072,retinal cancer,0.0,2
+MONDO:0003081,thalamic disorder,8.26052755022322,9
+MONDO:0003090,extrahepatic bile duct carcinoma,5.211401637418471,6
+MONDO:0003105,prostate disorder,5.208806736353584,65
+MONDO:0003113,extragonadal germ cell cancer,9.517669388133813,2
+MONDO:0003150,male reproductive system disorder,4.750411737995131,82
+MONDO:0003182,anterior horn disorder,5.305000435419194,65
+MONDO:0003193,bile duct adenocarcinoma,4.731803889050427,6
+MONDO:0003210,intrahepatic cholangiocarcinoma,9.51175265376738,4
+MONDO:0003218,adenocarcinoma in situ,6.708344916226438,6
+MONDO:0003225,bone marrow disorder,3.88049171892237,139
+MONDO:0003240,thyroid gland disorder,7.199672344836364,19
+MONDO:0003263,childhood cerebellar neoplasm,8.523561956057012,3
+MONDO:0003266,ependymal tumor,8.521600439723727,8
+MONDO:0003268,mixed glioma,0.0,5
+MONDO:0003274,thoracic cancer,3.1761879145626994,308
+MONDO:0003308,pleural mesothelioma,9.523561956057012,4
+MONDO:0003381,pituitary gland disorder,8.521600439723727,7
+MONDO:0003382,eyelid disorder,6.365350375178491,12
+MONDO:0003393,thymus gland disorder,0.0,2
+MONDO:0003406,sleep-wake disorder,0.0,2
+MONDO:0003409,colonic disorder,5.243840713067823,54
+MONDO:0003537,precursor T-lymphoblastic lymphoma/leukemia,7.369597346278677,8
+MONDO:0003538,precursor lymphoblastic lymphoma/leukemia,4.814300855493802,83
+MONDO:0003539,T-cell adult acute lymphocytic leukemia,8.2427771480858,7
+MONDO:0003540,acute T cell leukemia,7.437752072323603,18
+MONDO:0003541,adult acute lymphoblastic leukemia,8.096715154488535,7
+MONDO:0003569,cranial nerve neuropathy,0.0,4
+MONDO:0003578,extragonadal nonseminomatous germ cell tumor,9.517669388133813,2
+MONDO:0003604,functioning pituitary gland neoplasm,9.521600439723729,2
+MONDO:0003620,peripheral nervous system disorder,5.000780951322272,37
+MONDO:0003634,proteinuria,0.0,2
+MONDO:0003659,pediatric lymphoma,6.327044076248758,17
+MONDO:0003749,esophageal disorder,7.523561956057013,17
+MONDO:0003778,inborn error of immunity,4.635513977287609,23
+MONDO:0003780,T-cell immunodeficiency,0.0,2
+MONDO:0003812,ovarian endometrial cancer,6.702420082269333,2
+MONDO:0003825,kidney oncocytoma,6.936637939002571,2
+MONDO:0003847,hereditary disease,2.287580291642767,435
+MONDO:0003900,connective tissue disorder,3.133314066694016,255
+MONDO:0003916,overnutrition,6.161911669525194,30
+MONDO:0003924,adrenal cortex adenoma,9.521600439723729,5
+MONDO:0003937,spondylitis,0.0,2
+MONDO:0003939,muscle tissue disorder,4.6078170488618495,73
+MONDO:0003996,basal ganglia disorder,4.910501923841733,87
+MONDO:0004007,breast intraductal proliferative lesion,6.064130337419716,5
+MONDO:0004069,inborn mitochondrial metabolism disorder,8.521600439723727,7
+MONDO:0004095,B-cell neoplasm,4.235846106863083,138
+MONDO:0004180,benign urinary system neoplasm,7.523561956057013,2
+MONDO:0004225,monoclonal gammopathy of uncertain significance,9.523561956057012,4
+MONDO:0004251,small intestine neoplasm,7.356574237694254,10
+MONDO:0004298,stomach disorder,6.648520226487834,24
+MONDO:0004335,digestive system disorder,2.6107139631396103,409
+MONDO:0004338,retinal cell cancer,0.0,2
+MONDO:0004355,childhood leukemia,6.508813452698803,18
+MONDO:0004382,laryngeal disorder,9.523561956057012,3
+MONDO:0004403,childhood precursor T-lymphoblastic lymphoma/leukemia,5.825791683496144,8
+MONDO:0004580,retinal degeneration,6.98584193700334,14
+MONDO:0004609,herpes simplex infectious disease,7.664026162178388,7
+MONDO:0004631,tongue cancer,8.515699838284043,4
+MONDO:0004643,myeloid leukemia,4.068616108245847,131
+MONDO:0004647,in situ carcinoma,7.87826991766875,6
+MONDO:0004652,bacterial pneumonia,9.517669388133813,3
+MONDO:0004658,breast carcinoma in situ,6.650025957014931,5
+MONDO:0004670,lupus erythematosus,7.020702203791045,20
+MONDO:0004699,gastrointestinal lymphoma,9.513727595952435,6
+MONDO:0004736,inborn disorder of amino acid metabolism,9.521600439723729,6
+MONDO:0004781,acute myocardial infarction,7.936637939002571,3
+MONDO:0004790,fatty liver disease,0.0,2
+MONDO:0004796,infectious meningitis,9.521600439723729,4
+MONDO:0004805,leukocyte disorder,3.910232158781536,162
+MONDO:0004821,nasopharyngeal disorder,6.94251450533924,10
+MONDO:0004867,upper respiratory tract disorder,6.108330141330251,38
+MONDO:0004868,biliary tract disorder,8.523561956057012,8
+MONDO:0004884,eye degenerative disorder,0.0,5
+MONDO:0004928,lymph node disorder,0.0,3
+MONDO:0004938,substance dependence,0.0,2
+MONDO:0004948,B-cell chronic lymphocytic leukemia,6.509775004326937,33
+MONDO:0004949,neoplasm of mature B-cells,4.560323647280884,108
+MONDO:0004950,gastric carcinoma,7.926790153046223,13
+MONDO:0004952,Hodgkins lymphoma,6.775317992389931,12
+MONDO:0004953,invasive ductal breast carcinoma,7.075701976740122,16
+MONDO:0004956,metastatic prostate carcinoma,7.912889336229961,2
+MONDO:0004957,mucinous adenocarcinoma,6.708344916226438,3
+MONDO:0004958,oral cavity squamous cell carcinoma,9.505811553919594,6
+MONDO:0004959,plasma cell neoplasm,6.146535505966335,38
+MONDO:0004960,monoclonal gammopathy,9.523561956057012,4
+MONDO:0004963,T-cell acute lymphoblastic leukemia,7.042267370466159,8
+MONDO:0004967,acute lymphoblastic leukemia,5.008369552355733,83
+MONDO:0004970,adenocarcinoma,2.744210806824265,311
+MONDO:0004972,adenoma,6.224508316738495,26
+MONDO:0004975,Alzheimer disease,4.952366308864613,82
+MONDO:0004976,amyotrophic lateral sclerosis,5.246104005887703,56
+MONDO:0004979,asthma,7.20163386116965,20
+MONDO:0004980,atopic eczema,7.521600439723727,10
+MONDO:0004981,atrial fibrillation,9.521600439723729,5
+MONDO:0004983,spermatogenic failure,8.523561956057012,3
+MONDO:0004985,bipolar disorder,6.519876909249157,29
+MONDO:0004986,urinary bladder carcinoma,9.513727595952435,5
+MONDO:0004987,urinary bladder neoplasm,7.938599455335857,10
+MONDO:0004988,breast adenocarcinoma,6.30247573222119,23
+MONDO:0004989,breast carcinoma,5.097798776998133,78
+MONDO:0004990,breast tumor luminal A or B,6.457380879072535,4
+MONDO:0004992,cancer,1.2400339531617632,1196
+MONDO:0004993,carcinoma,2.1819289263988164,501
+MONDO:0004994,cardiomyopathy,5.340767891409504,35
+MONDO:0004995,cardiovascular disorder,4.028256618685417,135
+MONDO:0005002,chronic obstructive pulmonary disease,7.207166881383289,17
+MONDO:0005004,clear cell adenocarcinoma,7.930737337562887,11
+MONDO:0005005,clear cell renal carcinoma,7.92481250360578,10
+MONDO:0005006,clear cell sarcoma of kidney,8.513727595952437,3
+MONDO:0005008,colorectal adenocarcinoma,4.760112452056672,50
+MONDO:0005009,congestive heart failure,6.614709844115208,6
+MONDO:0005010,coronary artery disorder,7.93663793900257,14
+MONDO:0005011,Crohn disease,7.521600439723727,18
+MONDO:0005012,cutaneous melanoma,9.4757334309664,2
+MONDO:0005015,diabetes mellitus,5.789974684558626,38
+MONDO:0005020,intestinal disorder,3.655247137715225,174
+MONDO:0005021,dilated cardiomyopathy,7.0522419811811385,19
+MONDO:0005023,ductal breast carcinoma in situ,6.868308133289467,5
+MONDO:0005027,epilepsy,6.716207033999408,27
+MONDO:0005028,esophageal adenocarcinoma,7.513727595952437,4
+MONDO:0005029,essential thrombocythemia,8.515699838284043,4
+MONDO:0005032,follicular thyroid adenoma,9.521600439723729,2
+MONDO:0005033,ganglioneuroma,9.517669388133813,2
+MONDO:0005034,thyroid gland follicular carcinoma,7.513727595952437,6
+MONDO:0005035,ganglioneuroblastoma,0.0,3
+MONDO:0005036,gastric adenocarcinoma,9.507794640198696,6
+MONDO:0005039,reproductive system disorder,3.570529386278497,207
+MONDO:0005040,germ cell tumor,9.523561956057012,6
+MONDO:0005041,glaucoma,0.0,4
+MONDO:0005044,hypertensive disorder,6.880195728943098,21
+MONDO:0005045,hypertrophic cardiomyopathy,7.525520809095069,10
+MONDO:0005046,immune system disorder,2.2702434988892146,545
+MONDO:0005047,infertility disorder,6.799821249372196,14
+MONDO:0005052,irritable bowel syndrome,9.523561956057012,2
+MONDO:0005053,ischemic disease,8.521600439723727,6
+MONDO:0005055,Kaposi's sarcoma,0.0,2
+MONDO:0005057,large cell neuroendocrine carcinoma,6.515699838284043,2
+MONDO:0005058,leiomyosarcoma,7.284374292177587,10
+MONDO:0005059,leukemia,3.596804118557422,222
+MONDO:0005060,liposarcoma,6.934673752122056,13
+MONDO:0005061,lung adenocarcinoma,4.870880869588091,51
+MONDO:0005062,lymphoma,3.615306806882039,206
+MONDO:0005063,medullary breast carcinoma,6.27715822476734,2
+MONDO:0005065,mesothelioma,9.523561956057012,6
+MONDO:0005066,metabolic disease,3.966246296096865,107
+MONDO:0005068,myocardial infarction,7.936637939002571,6
+MONDO:0005070,neoplasm,0.8697494307603053,1595
+MONDO:0005071,nervous system disorder,1.4912641875747092,961
+MONDO:0005072,neuroblastoma,4.640826976864868,101
+MONDO:0005075,thyroid gland papillary carcinoma,8.513727595952437,10
+MONDO:0005076,periodontitis,9.523561956057012,5
+MONDO:0005079,polyp,0.0,3
+MONDO:0005081,preeclampsia,8.521600439723727,10
+MONDO:0005082,prostate adenocarcinoma,6.745456467106934,10
+MONDO:0005083,psoriasis,6.640799631341386,24
+MONDO:0005084,mental disorder,3.9467328242089046,173
+MONDO:0005085,pterygium,9.523561956057012,3
+MONDO:0005086,renal cell carcinoma,6.075394167231454,29
+MONDO:0005087,respiratory system disorder,3.445440347521428,216
+MONDO:0005089,sarcoma,4.69401490350505,61
+MONDO:0005090,schizophrenia,5.421431384144234,62
+MONDO:0005093,skin disorder,4.644723395139084,75
+MONDO:0005095,spondyloarthropathy,0.0,3
+MONDO:0005096,squamous cell carcinoma,4.817547244019048,66
+MONDO:0005097,squamous cell lung carcinoma,6.175787092979498,25
+MONDO:0005098,stroke disorder,0.0,2
+MONDO:0005100,systemic sclerosis,6.521600439723727,3
+MONDO:0005101,ulcerative colitis,6.93663793900257,22
+MONDO:0005105,melanoma,4.582603757773064,108
+MONDO:0005108,viral infectious disease,4.183759973857898,136
+MONDO:0005109,HIV infectious disease,6.519636252843213,34
+MONDO:0005111,Epstein-Barr virus infection,7.523561956057013,6
+MONDO:0005112,malignant pleural mesothelioma,9.517669388133813,3
+MONDO:0005113,bacterial infectious disease,5.138974086072014,47
+MONDO:0005115,temporal lobe epilepsy,8.519636252843213,6
+MONDO:0005124,leprosy,9.519636252843211,3
+MONDO:0005127,lepromatous leprosy,9.519636252843211,2
+MONDO:0005130,celiac disease,8.521600439723727,3
+MONDO:0005131,cervical carcinoma,8.250693190118643,8
+MONDO:0005132,cytomegalovirus infection,9.519636252843211,5
+MONDO:0005133,endometriosis,7.813068573251997,11
+MONDO:0005135,parasitic infectious disease,7.451211111832329,10
+MONDO:0005136,malaria,8.521600439723727,6
+MONDO:0005137,nutritional disorder,6.098470792114246,33
+MONDO:0005138,lung carcinoma,4.755303611117394,89
+MONDO:0005140,ovarian carcinoma,5.970255474366948,19
+MONDO:0005146,post-traumatic stress disorder,6.521600439723727,4
+MONDO:0005147,type 1 diabetes mellitus,7.352656529812518,13
+MONDO:0005148,type 2 diabetes mellitus,6.404483918477875,19
+MONDO:0005149,pulmonary hypertension,9.521600439723729,6
+MONDO:0005150,age-related macular degeneration,8.258566033889933,8
+MONDO:0005151,endocrine system disorder,2.7907314699775605,312
+MONDO:0005154,liver disorder,4.33398468870914,116
+MONDO:0005155,cirrhosis of liver,6.619608643528047,10
+MONDO:0005156,encephalomyelitis,3.0732489820306386,14
+MONDO:0005157,lymphoid neoplasm,3.608543232119562,207
+MONDO:0005159,prostate carcinoma,6.787358454146102,22
+MONDO:0005160,aortic aneurysm,9.521600439723729,3
+MONDO:0005164,fibrosarcoma,0.0,3
+MONDO:0005165,benign neoplasm,3.903392186922789,42
+MONDO:0005167,fibroma,9.523561956057012,4
+MONDO:0005168,neoplasm of immature B and T cells,4.814300855493802,83
+MONDO:0005169,neoplasm of mature T-cells or NK-cells,7.025447205960426,10
+MONDO:0005170,myeloid neoplasm,3.849849386657528,177
+MONDO:0005172,skeletal system disorder,3.228199268070294,232
+MONDO:0005178,osteoarthritis,7.626655449021117,10
+MONDO:0005180,Parkinson disease,4.910501923841733,87
+MONDO:0005184,pancreatic ductal adenocarcinoma,7.509775004326937,17
+MONDO:0005191,metastatic melanoma,8.481799431665753,7
+MONDO:0005192,exocrine pancreatic carcinoma,6.5866262730840255,24
+MONDO:0005197,thymus neoplasm,0.0,2
+MONDO:0005201,restrictive cardiomyopathy,0.0,2
+MONDO:0005206,renal carcinoma,6.166938362493633,31
+MONDO:0005211,ovarian serous adenocarcinoma,8.505811553919594,10
+MONDO:0005212,rhabdomyosarcoma,9.515699838284045,2
+MONDO:0005213,uterine carcinoma,3.96995271898448,15
+MONDO:0005217,familial cardiomyopathy,6.386121156814855,18
+MONDO:0005229,bacterial infectious disease with sepsis,8.519636252843213,2
+MONDO:0005231,hepatitis C virus infection,7.356137520560333,15
+MONDO:0005232,large cell carcinoma,4.187077090822672,9
+MONDO:0005233,non-small cell lung carcinoma,5.023664129009489,74
+MONDO:0005238,round cell liposarcoma,7.928765095231281,2
+MONDO:0005240,kidney disorder,5.369126181781863,58
+MONDO:0005244,peripheral neuropathy,6.529430554146151,16
+MONDO:0005249,pneumonia,7.671639346288263,11
+MONDO:0005252,heart failure,6.614709844115208,6
+MONDO:0005258,autism spectrum disorder,6.007822896517761,45
+MONDO:0005260,autism,7.995201831497178,7
+MONDO:0005265,inflammatory bowel disease,5.971320223768961,34
+MONDO:0005266,diabetic retinopathy,7.936637939002571,2
+MONDO:0005267,heart disorder,5.033773006313323,71
+MONDO:0005269,carotid artery disorder,9.521600439723729,2
+MONDO:0005271,allergic disease,6.468455864455637,20
+MONDO:0005275,lung disorder,4.001639894997872,146
+MONDO:0005278,serous adenocarcinoma,7.54740869801138,13
+MONDO:0005283,retinal disorder,6.059896716370792,25
+MONDO:0005284,chronic progressive multiple sclerosis,7.501837184902297,4
+MONDO:0005291,brain aneurysm,8.521600439723727,8
+MONDO:0005292,colitis,6.93663793900257,24
+MONDO:0005298,osteoporosis,9.523561956057012,3
+MONDO:0005299,brain ischemia,8.521600439723727,3
+MONDO:0005300,chronic kidney disease,6.06216882108643,3
+MONDO:0005301,multiple sclerosis,5.533078515755285,55
+MONDO:0005303,drug dependence,0.0,2
+MONDO:0005304,biliary tract neoplasm,8.521600439723727,6
+MONDO:0005306,ankylosing spondylitis,0.0,2
+MONDO:0005311,atherosclerosis,5.714245517666122,6
+MONDO:0005314,relapsing-remitting multiple sclerosis,7.724229606238745,10
+MONDO:0005323,bacterial sexually transmitted disease,8.519636252843213,4
+MONDO:0005328,eye disorder,4.640318839846173,62
+MONDO:0005335,colorectal neoplasm,4.356729025689318,122
+MONDO:0005336,myopathy,6.33663052930901,34
+MONDO:0005341,skin basal cell carcinoma,9.513727595952435,2
+MONDO:0005344,hepatitis B virus infection,5.612745657234695,4
+MONDO:0005358,Dengue hemorrhagic fever,9.519636252843211,4
+MONDO:0005371,mood disorder,5.57491271735793,52
+MONDO:0005372,male infertility,7.09412657153135,13
+MONDO:0005374,bone marrow neoplasm,3.8328412554058753,137
+MONDO:0005375,nasopharyngeal neoplasm,9.523561956057012,5
+MONDO:0005379,neurotic disorder,6.521600439723727,4
+MONDO:0005381,bone disorder,3.26678508937024,222
+MONDO:0005384,focal epilepsy,8.519636252843213,6
+MONDO:0005385,vascular disorder,4.56528045618625,84
+MONDO:0005387,primary ovarian failure,3.98299357469431,7
+MONDO:0005395,movement disorder,5.277274794658002,54
+MONDO:0005401,colonic neoplasm,5.307038241538523,30
+MONDO:0005402,lymphoid leukemia,4.795902628436789,87
+MONDO:0005404,myalgic encephalomeyelitis/chronic fatigue syndrome,9.523561956057012,2
+MONDO:0005429,prion disease,0.0,2
+MONDO:0005439,familial hypercholesterolemia,8.521600439723727,2
+MONDO:0005446,cutaneous leishmaniasis,9.521600439723729,2
+MONDO:0005453,congenital heart disease,0.0,3
+MONDO:0005454,lung neuroendocrine neoplasm,5.614709844115208,9
+MONDO:0005461,endometrium adenocarcinoma,5.307276718485011,6
+MONDO:0005462,primitive neuroectodermal tumor,4.610145240828805,104
+MONDO:0005484,colorectal adenoma,5.521600439723727,5
+MONDO:0005485,psychotic disorder,5.421431384144234,62
+MONDO:0005494,triple-negative breast carcinoma,7.637953124714356,9
+MONDO:0005495,adrenal gland disorder,7.119330236518761,17
+MONDO:0005496,bile duct carcinoma,5.211401637418471,6
+MONDO:0005497,bone development disease,7.356574237694254,12
+MONDO:0005499,brain glioma,4.80533429164418,10
+MONDO:0005502,dengue disease,8.519636252843213,9
+MONDO:0005503,developmental disorder of mental health,4.837786426916443,67
+MONDO:0005509,histiocytoma,9.523561956057012,5
+MONDO:0005515,oral cavity cancer,5.800069118834537,8
+MONDO:0005516,osteochondrodysplasia,9.523561956057012,4
+MONDO:0005517,pharynx cancer,4.737609510731633,6
+MONDO:0005525,T-cell leukemia,6.662376424959295,20
+MONDO:0005549,renal cell adenocarcinoma,7.92481250360578,13
+MONDO:0005550,infectious disease,3.544215822619043,198
+MONDO:0005552,ocular vascular disorder,8.521600439723727,2
+MONDO:0005554,rheumatic disorder,4.752411191392722,86
+MONDO:0005558,ovarian disorder,5.441463436653064,50
+MONDO:0005559,neurodegenerative disease,3.1680139289258102,263
+MONDO:0005560,brain disorder,2.513741515428332,433
+MONDO:0005561,aortic disorder,9.521600439723729,6
+MONDO:0005564,embryonal neoplasm,4.10349293540574,142
+MONDO:0005570,hematologic disorder,2.740795074414961,386
+MONDO:0005574,tauopathy,4.857617548774532,82
+MONDO:0005575,colorectal cancer,3.9411074041816425,118
+MONDO:0005578,arthritic joint disease,5.809172748259694,48
+MONDO:0005579,"epilepsy, idiopathic generalized",0.0,2
+MONDO:0005580,esophageal squamous cell carcinoma,9.51175265376738,6
+MONDO:0005586,head and neck neoplasm,4.301689944191018,49
+MONDO:0005590,breast ductal adenocarcinoma,6.672715771296734,18
+MONDO:0005596,cystadenocarcinoma,0.0,2
+MONDO:0005611,bladder transitional cell carcinoma,0.0,2
+MONDO:0005617,undifferentiated carcinoma,7.930737337562887,3
+MONDO:0005618,anxiety disorder,7.684026628250259,8
+MONDO:0005626,epithelial neoplasm,2.082693244787833,522
+MONDO:0005627,head and neck cancer,5.492658558788545,37
+MONDO:0005696,central nervous system tuberculosis,9.513727595952435,3
+MONDO:0005701,chlamydia trachomatis infectious disease,8.519636252843213,4
+MONDO:0005709,common cold,9.523561956057012,6
+MONDO:0005718,Coronaviridae infectious disease,8.519636252843213,10
+MONDO:0005747,enterovirus infectious disease,9.519636252843211,2
+MONDO:0005763,Flaviviridae infectious disease,5.900314906996743,34
+MONDO:0005786,Hepadnaviridae infectious disease,5.712281330785609,4
+MONDO:0005794,Herpesviridae infectious disease,6.431099578241556,18
+MONDO:0005801,human T-lymphotropic virus 1 infectious disease,9.519636252843211,3
+MONDO:0005812,influenza,7.021457518264123,19
+MONDO:0005814,intestinal cancer,3.930069424985554,118
+MONDO:0005833,lymphatic system disorder,4.623197911829344,16
+MONDO:0005836,male reproductive organ cancer,5.261935672021792,66
+MONDO:0005853,malignant mixed neoplasm,2.610851501307452,18
+MONDO:0005856,Mononegavirales infectious disease,7.934673752122056,4
+MONDO:0005864,muscle cancer,7.084709980857706,13
+MONDO:0005872,nervous system cancer,3.955920607702906,154
+MONDO:0005876,Nidovirales infectious disease,8.519636252843213,10
+MONDO:0005914,Picornaviridae infectious disease,9.519636252843211,2
+MONDO:0005920,Plasmodium falciparum malaria,9.519636252843211,2
+MONDO:0005941,retroperitoneal cancer,9.517669388133813,6
+MONDO:0005966,spleen cancer,6.710314466076207,6
+MONDO:0006003,uterine corpus cancer,9.517669388133813,2
+MONDO:0006009,viral encephalitis,0.0,5
+MONDO:0006011,viral hepatitis,5.847149182641876,19
+MONDO:0006025,autosomal recessive disease,5.107018306543582,31
+MONDO:0006026,urinary bladder disorder,7.938599455335857,11
+MONDO:0006043,metaplastic breast carcinoma,5.995895601667264,2
+MONDO:0006047,pancreatic adenocarcinoma,7.187846909439575,18
+MONDO:0006052,pulmonary tuberculosis,6.928765095231281,2
+MONDO:0006054,reproductive system neoplasm,4.213178525388945,132
+MONDO:0006058,Wilms tumor,8.254634982300018,7
+MONDO:0006105,benign conjunctival neoplasm,9.523561956057012,3
+MONDO:0006106,benign smooth muscle neoplasm,8.26052755022322,6
+MONDO:0006107,benign thyroid gland neoplasm,9.521600439723729,2
+MONDO:0006116,breast carcinoma by gene expression profile,6.037270064277308,32
+MONDO:0006130,central nervous system neoplasm,3.827970662523359,174
+MONDO:0006143,cervical squamous cell carcinoma,9.509775004326936,4
+MONDO:0006170,conjunctival disorder,9.523561956057012,3
+MONDO:0006180,digestive system adenoma,5.521600439723727,5
+MONDO:0006181,digestive system carcinoma,3.4193860694060567,191
+MONDO:0006209,fibroblastic neoplasm,6.971020933028234,8
+MONDO:0006244,HER2 positive breast carcinoma,6.799905878567011,13
+MONDO:0006256,invasive breast carcinoma,6.54897888932971,21
+MONDO:0006290,malignant germ cell tumor,8.517669388133811,3
+MONDO:0006292,malignant mesothelioma,9.517669388133813,5
+MONDO:0006294,pleural cancer,9.517669388133813,4
+MONDO:0006295,malignant urinary system neoplasm,5.076634165644252,52
+MONDO:0006311,myelodysplastic/myeloproliferative neoplasm,9.515699838284045,2
+MONDO:0006316,neuroblastic tumor,4.640826976864868,101
+MONDO:0006325,ocular melanoma,9.4757334309664,4
+MONDO:0006373,pituitary gland adenoma,7.525520809095069,6
+MONDO:0006424,soft tissue neoplasm,4.720022178750691,38
+MONDO:0006456,thymoma,0.0,2
+MONDO:0006468,thyroid gland undifferentiated (anaplastic) carcinoma,7.513727595952437,2
+MONDO:0006474,transitional cell carcinoma,5.19377174339668,5
+MONDO:0006486,uveal melanoma,9.4757334309664,4
+MONDO:0006496,palsy,9.523561956057012,3
+MONDO:0006497,cerebral palsy,9.523561956057012,2
+MONDO:0006502,acute respiratory distress syndrome,4.273672926280141,2
+MONDO:0006504,acquired metabolic disease,0.0,4
+MONDO:0006509,papillary carcinoma,6.4742332209886575,15
+MONDO:0006512,estrogen-receptor positive breast cancer,6.602646255978404,18
+MONDO:0006513,estrogen-receptor negative breast cancer,5.347161052551954,20
+MONDO:0006517,childhood malignant neoplasm,6.095134576557339,22
+MONDO:0006519,rectal cancer,9.497851836951115,4
+MONDO:0006639,adrenal cortex carcinoma,9.509775004326936,5
+MONDO:0006670,bacterial meningitis,9.519636252843211,4
+MONDO:0006693,cerebral arterial disease,8.521600439723727,10
+MONDO:0006704,CNS demyelinating autoimmune disease,5.602836857458347,55
+MONDO:0006793,hyperpituitarism,0.0,2
+MONDO:0006799,hypothalamic neoplasm,8.523561956057012,7
+MONDO:0006808,intracranial arterial disease,8.521600439723727,10
+MONDO:0006816,arthropathy,5.752749030298597,50
+MONDO:0006856,mesothelial neoplasm,9.523561956057012,6
+MONDO:0006858,mouth disorder,6.411851568559996,19
+MONDO:0006975,smooth muscle tumor,6.392775348521659,16
+MONDO:0006999,tooth disorder,9.523561956057012,6
+MONDO:0007113,Angelman syndrome,9.523561956057012,3
+MONDO:0007179,autoimmune disease,4.003225552138595,140
+MONDO:0007243,Burkitt lymphoma,6.525520809095069,8
+MONDO:0007254,breast cancer,3.878854112290387,190
+MONDO:0007256,hepatocellular carcinoma,5.028296930739102,78
+MONDO:0007257,"candidiasis, familial, 1",5.82312223791592,4
+MONDO:0007263,cardiac rhythm disease,9.521600439723729,5
+MONDO:0007488,Lewy body dementia,9.519636252843211,4
+MONDO:0007576,esophageal cancer,7.72625600994523,11
+MONDO:0007650,MALT lymphoma,9.51175265376738,3
+MONDO:0007739,Huntington disease,6.354101009955508,33
+MONDO:0007763,nonpapillary renal cell carcinoma,7.92481250360578,10
+MONDO:0007803,multiple system atrophy,9.519636252843211,5
+MONDO:0007827,inclusion body myositis,0.0,4
+MONDO:0007886,uterine corpus leiomyoma,9.521600439723729,4
+MONDO:0007915,systemic lupus erythematosus,7.44759985827995,18
+MONDO:0007959,medulloblastoma,7.034983991760199,19
+MONDO:0008054,juvenile dermatomyositis,0.0,2
+MONDO:0008056,myotonic dystrophy type 1,7.523561956057013,8
+MONDO:0008170,ovarian cancer,5.923188758046902,42
+MONDO:0008315,prostate cancer,5.265544738225175,65
+MONDO:0008380,retinoblastoma,0.0,2
+MONDO:0008383,rheumatoid arthritis,5.965747963632565,37
+MONDO:0008433,small cell lung carcinoma,7.357771910881887,8
+MONDO:0008487,polycystic ovary syndrome,9.521600439723729,6
+MONDO:0008608,Down syndrome,6.679681157974295,24
+MONDO:0008678,Williams syndrome,7.938599455335857,2
+MONDO:0008840,ataxia telangiectasia,9.521600439723729,6
+MONDO:0008903,lung cancer,4.347306497708729,109
+MONDO:0009061,cystic fibrosis,9.523561956057012,3
+MONDO:0009131,Riley-Day syndrome,9.521600439723729,4
+MONDO:0009332,congenital hematological disorder,0.0,2
+MONDO:0009453,immune deficiency disease,4.635513977287609,23
+MONDO:0009637,inborn mitochondrial myopathy,6.936637939002571,2
+MONDO:0009676,autosomal recessive limb-girdle muscular dystrophy type 2B,9.523561956057012,3
+MONDO:0009693,plasma cell myeloma,6.16399084214107,38
+MONDO:0009807,osteosarcoma,8.515699838284043,9
+MONDO:0009831,malignant pancreatic neoplasm,6.1419162289140825,33
+MONDO:0010030,Sjogren syndrome,9.521600439723729,3
+MONDO:0010150,head and neck squamous cell carcinoma,7.113640438139565,18
+MONDO:0010383,fragile X syndrome,8.523561956057012,10
+MONDO:0010434,synovial sarcoma,6.515699838284043,6
+MONDO:0010542,dilated cardiomyopathy 3B,8.252665432450248,6
+MONDO:0010595,Sertoli cell-only syndrome,8.523561956057012,3
+MONDO:0010643,acute leukemia,4.01854762637627,166
+MONDO:0010679,Duchenne muscular dystrophy,8.252665432450248,6
+MONDO:0010726,Rett syndrome,7.938599455335857,11
+MONDO:0010795,oncocytic neoplasm,6.199672344836364,4
+MONDO:0011057,cerebrovascular disorder,7.199672344836364,19
+MONDO:0011122,obesity disorder,6.24366098923867,30
+MONDO:0011266,myotonic dystrophy type 2,6.351675438281415,3
+MONDO:0011382,sickle cell anemia,9.521600439723729,4
+MONDO:0011429,juvenile idiopathic arthritis,7.404263027684668,12
+MONDO:0011652,Phelan-McDermid syndrome,5.436099114806674,3
+MONDO:0011655,alveolar soft part sarcoma,0.0,2
+MONDO:0011719,gastrointestinal stromal tumor,8.523561956057012,9
+MONDO:0011786,allergic rhinitis,9.521600439723729,6
+MONDO:0011962,endometrial cancer,6.932706887412656,10
+MONDO:0011989,leishmaniasis,9.521600439723729,2
+MONDO:0011996,"chronic myelogenous leukemia, BCR-ABL1 positive",5.541237996572695,47
+MONDO:0012268,AIDS,0.0,2
+MONDO:0012589,Pitt-Hopkins syndrome,9.523561956057012,2
+MONDO:0012817,Ewing sarcoma,7.930737337562887,11
+MONDO:0012883,acute promyelocytic leukemia,0.0,2
+MONDO:0013280,myxoid liposarcoma,9.513727595952435,2
+MONDO:0013662,Barrett esophagus,8.523561956057012,6
+MONDO:0013847,chromosome 16p11.2 duplication syndrome,9.523561956057012,4
+MONDO:0015074,thyroid tumor,7.199672344836364,19
+MONDO:0015075,thyroid gland carcinoma,7.103287808412022,17
+MONDO:0015127,pituitary deficiency,0.0,4
+MONDO:0015131,combined immunodeficiency,4.388495711826352,9
+MONDO:0015135,primary immunodeficiency due to a genetic defect in innate immunity,0.0,6
+MONDO:0015137,periodic fever syndrome,0.0,3
+MONDO:0015144,brain inflammatory disease,8.523561956057012,10
+MONDO:0015152,autosomal recessive limb-girdle muscular dystrophy,6.20163386116965,4
+MONDO:0015157,human herpesvirus 8-related tumor,0.0,2
+MONDO:0015159,multiple congenital anomalies/dysmorphic syndrome-intellectual disability,5.5819059422878174,13
+MONDO:0015160,multiple congenital anomalies/dysmorphic syndrome-variable intellectual disability syndrome,7.527477006060396,6
+MONDO:0015161,multiple congenital anomalies/dysmorphic syndrome without intellectual disability,0.0,5
+MONDO:0015221,non-syndromic respiratory or mediastinal malformation,0.0,3
+MONDO:0015244,autosomal recessive cerebellar ataxia,9.523561956057012,5
+MONDO:0015246,syndromic anorectal malformation,0.0,3
+MONDO:0015279,chronic mucocutaneous candidiasis,5.82312223791592,4
+MONDO:0015286,congenital disorder of glycosylation,0.0,3
+MONDO:0015327,developmental anomaly of metabolic origin,2.699692107026033,17
+MONDO:0015330,overgrowth/obesity syndrome,8.523561956057012,5
+MONDO:0015333,progeroid syndrome,0.0,5
+MONDO:0015356,hereditary neoplastic syndrome,0.0,7
+MONDO:0015364,hereditary sensory and autonomic neuropathy,9.521600439723729,5
+MONDO:0015366,autosomal recessive hereditary sensory and autonomic neuropathy,9.521600439723729,4
+MONDO:0015447,differentiated thyroid carcinoma,7.928765095231281,14
+MONDO:0015459,nasopharyngeal carcinoma,0.0,5
+MONDO:0015469,craniosynostosis,9.523561956057012,2
+MONDO:0015470,familial isolated dilated cardiomyopathy,8.252665432450248,6
+MONDO:0015514,hereditary endocrine growth disease,6.387488313530486,12
+MONDO:0015547,hereditary dementia,5.073776107815538,23
+MONDO:0015548,Huntington disease-like syndrome,8.519636252843213,2
+MONDO:0015610,acquired aplastic anemia,0.0,3
+MONDO:0015620,syndromic urogenital tract malformation,9.523561956057012,2
+MONDO:0015626,Charcot-Marie-Tooth disease,9.521600439723729,2
+MONDO:0015650,epilepsy syndrome,8.10459875356437,10
+MONDO:0015653,monogenic epilepsy,6.775317992389931,12
+MONDO:0015667,acute myeloid leukemia by FAB classification,0.0,3
+MONDO:0015756,myeloid hemopathy,4.004533436085278,146
+MONDO:0015757,lymphoid hemopathy,3.557965200157012,206
+MONDO:0015758,primary cutaneous T-cell lymphoma,9.513727595952435,2
+MONDO:0015759,B-cell non-Hodgkin lymphoma,4.448477505317792,98
+MONDO:0015760,T-cell non-Hodgkin lymphoma,7.465188468820837,12
+MONDO:0015770,congenital hypogonadotropic hypogonadism,9.521600439723729,3
+MONDO:0015823,primary immunodeficiency due to a defect in adaptive immunity,2.2496138900714726,12
+MONDO:0015860,anomaly of puberty or/and menstrual cycle,2.974529312483882,10
+MONDO:0015909,aplastic anemia,7.525520809095069,6
+MONDO:0015925,interstitial lung disease,6.08131311815476,17
+MONDO:0015930,respiratory malformation,0.0,3
+MONDO:0015974,severe combined immunodeficiency,7.523561956057013,3
+MONDO:0016006,Cockayne syndrome,7.936637939002571,3
+MONDO:0016054,cerebral malformation,8.523561956057012,4
+MONDO:0016072,anomaly of puberty or/and menstrual cycle of genetic origin,2.974529312483882,10
+MONDO:0016105,acquired skeletal muscle disease,8.523561956057012,9
+MONDO:0016106,progressive muscular dystrophy,6.6384674371042935,23
+MONDO:0016107,myotonic dystrophy,8.523561956057012,9
+MONDO:0016120,myotonic syndrome,8.523561956057012,9
+MONDO:0016139,qualitative or quantitative protein defects in neuromuscular diseases,6.94251450533924,10
+MONDO:0016145,qualitative or quantitative defects of dysferlin,9.523561956057012,3
+MONDO:0016147,qualitative or quantitative defects of dystrophin,8.26052755022322,6
+MONDO:0016155,qualitative or quantitative defects of protein involved in O-glycosylation of alpha-dystroglycan,0.0,2
+MONDO:0016156,qualitative or quantitative defects of FKRP,0.0,2
+MONDO:0016157,qualitative or quantitative defects of fukutin,0.0,2
+MONDO:0016168,cryopyrin-associated periodic syndrome,0.0,3
+MONDO:0016333,familial dilated cardiomyopathy,8.100662339005199,8
+MONDO:0016367,dermatomyositis,8.523561956057012,8
+MONDO:0016387,mitochondrial oxidative phosphorylation disorder,0.0,4
+MONDO:0016565,syndromic genetic obesity,5.706372673894833,4
+MONDO:0016642,meningioma,7.938599455335857,11
+MONDO:0016680,high grade astrocytic tumor,5.087321765167532,78
+MONDO:0016681,gliosarcoma,0.0,2
+MONDO:0016682,giant cell glioblastoma,0.0,2
+MONDO:0016684,anaplastic astrocytoma,0.0,4
+MONDO:0016685,low-grade astrocytoma,2.972901482989342,6
+MONDO:0016691,pilocytic astrocytoma,3.906890595608519,6
+MONDO:0016695,oligodendroglioma,7.070866330719644,12
+MONDO:0016696,anaplastic oligodendroglioma,8.50382573799575,3
+MONDO:0016698,ependymoma,7.199672344836364,6
+MONDO:0016701,oligoastrocytic tumor,5.044394119358453,4
+MONDO:0016702,oligoastrocytoma,5.596935142387232,4
+MONDO:0016708,embryonal tumor of neuroepithelial tissue,4.36903136622575,122
+MONDO:0016729,mixed neuronal-glial tumor,9.523561956057012,5
+MONDO:0016743,tumor of meninges,7.938599455335857,12
+MONDO:0016749,tumor of cranial and spinal nerves,7.527477006060396,9
+MONDO:0016752,benign peripheral nerve sheath tumor,0.0,2
+MONDO:0016756,inherited nervous system cancer-predisposing syndrome,8.523561956057012,9
+MONDO:0016872,partial deletion of chromosome 7,7.938599455335857,2
+MONDO:0016878,partial deletion of chromosome 16,9.523561956057012,4
+MONDO:0016894,partial deletion of the short arm of chromosome 16,9.523561956057012,4
+MONDO:0016899,Duchenne and Becker muscular dystrophy,8.252665432450248,6
+MONDO:0016906,partial deletion of the long arm of chromosome 7,7.938599455335857,2
+MONDO:0016934,partial duplication of chromosome 16,9.523561956057012,4
+MONDO:0016949,partial duplication of the short arm of chromosome 16,9.523561956057012,4
+MONDO:0016971,limb-girdle muscular dystrophy,7.938599455335857,5
+MONDO:0016982,angiosarcoma,0.0,2
+MONDO:0017026,interstitial lung disease specific to adulthood,7.0678824722808224,10
+MONDO:0017027,primary interstitial lung disease specific to adulthood,8.521600439723727,8
+MONDO:0017127,inherited soft tissue tumor,9.523561956057012,4
+MONDO:0017128,inherited digestive tract tumor,6.365350375178491,10
+MONDO:0017146,sickle cell disease and related diseases,9.521600439723729,4
+MONDO:0017207,primary organ-specific lymphoma,4.236492618381302,8
+MONDO:0017276,frontotemporal dementia,1.309765456178785,11
+MONDO:0017341,virus associated tumor,4.322966761430261,39
+MONDO:0017342,Epstein-Barr virus-related tumor,5.22458521775022,35
+MONDO:0017343,Epstein-Barr virus-associated malignant lymphoproliferative disorder,5.685931497628356,21
+MONDO:0017344,Epstein-Barr virus-associated carcinoma,9.523561956057012,5
+MONDO:0017345,Epstein-Barr virus-associated mesenchymal tumor,5.626439136697315,10
+MONDO:0017594,indolent B-cell non-Hodgkin lymphoma,5.6645892320182885,46
+MONDO:0017595,aggressive B-cell non-Hodgkin lymphoma,5.305231364274543,56
+MONDO:0017604,marginal zone lymphoma,9.51175265376738,6
+MONDO:0017611,pituitary tumor,8.521600439723727,7
+MONDO:0017704,familial partial epilepsy,8.519636252843213,6
+MONDO:0017741,disorder of protein O-glycosylation,0.0,2
+MONDO:0017745,disorder of O-mannosylglycan synthesis,0.0,2
+MONDO:0017824,familial isolated pituitary adenoma,0.0,2
+MONDO:0017827,malignant peripheral nerve sheath tumor,8.515699838284043,6
+MONDO:0017884,papillary renal cell carcinoma,8.509775004326936,2
+MONDO:0017953,hereditary periodic fever syndrome,0.0,3
+MONDO:0017955,granulomatous autoinflammatory syndrome,8.523561956057012,8
+MONDO:0018010,juvenile idiopathic inflammatory myopathy,0.0,2
+MONDO:0018075,neural tube defect,9.523561956057012,2
+MONDO:0018076,tuberculosis,6.706053220412407,18
+MONDO:0018078,soft tissue sarcoma,4.100898892454149,37
+MONDO:0018079,thymic epithelial neoplasm,0.0,2
+MONDO:0018087,viral hemorrhagic fever,9.519636252843211,4
+MONDO:0018177,glioblastoma,5.087321765167532,78
+MONDO:0018201,extragonadal germ cell tumor,9.523561956057012,2
+MONDO:0018230,skeletal dysplasia,1.4174980019602843,11
+MONDO:0018234,dysostosis,6.745954377393461,8
+MONDO:0018282,qualitative or quantitative defects of alpha-dystroglycan,0.0,2
+MONDO:0018364,malignant epithelial tumor of ovary,6.181457234150475,23
+MONDO:0018393,male infertility with azoospermia or oligozoospermia due to single gene mutation,8.523561956057012,3
+MONDO:0018454,dysostosis of genetic origin,6.745954377393461,8
+MONDO:0018506,mesenchymal tumor of small intestine,8.523561956057012,9
+MONDO:0018531,carcinoma of liver and intrahepatic biliary tract,4.983853950615977,82
+MONDO:0018532,adenocarcinoma of liver and intrahepatic biliary tract,4.920319442645334,82
+MONDO:0018536,adenocarcinoma of gallbladder and extrahepatic biliary tract,6.926790153046223,6
+MONDO:0018544,adrenoleukodystrophy,9.515699838284045,3
+MONDO:0018555,hypogonadotropic hypogonadism,9.521600439723729,3
+MONDO:0018661,Zika virus infectious disease,8.519636252843213,8
+MONDO:0018744,oligodendroglial tumor,7.00767250423245,14
+MONDO:0018872,acute megakaryoblastic leukemia,0.0,2
+MONDO:0018874,acute myeloid leukemia,4.922131891544471,86
+MONDO:0018876,mantle cell lymphoma,7.325024310191416,16
+MONDO:0018881,myelodysplastic syndrome,7.354616713593536,11
+MONDO:0018882,vasculitis,0.0,2
+MONDO:0018898,primary cutaneous lymphoma,7.517669388133812,6
+MONDO:0018905,diffuse large B-cell lymphoma,6.452081046506235,22
+MONDO:0018906,follicular lymphoma,6.864535384771076,14
+MONDO:0018908,non-Hodgkin lymphoma,4.006238096452343,148
+MONDO:0018912,Cushing syndrome,9.521600439723729,2
+MONDO:0018918,carcinoma of gallbladder and extrahepatic biliary tract,9.521600439723729,6
+MONDO:0019004,kidney Wilms tumor,6.363696744838992,6
+MONDO:0019019,osteogenesis imperfecta,9.523561956057012,3
+MONDO:0019040,chromosomal disorder,4.892433709936416,42
+MONDO:0019042,multiple congenital anomalies/dysmorphic syndrome,5.89439317466537,24
+MONDO:0019044,tumor of hematopoietic and lymphoid tissues,2.9669360591239102,347
+MONDO:0019046,leukodystrophy,7.5740678596178626,8
+MONDO:0019050,inherited hemoglobinopathy,9.523561956057012,4
+MONDO:0019052,inborn errors of metabolism,3.721152398264332,46
+MONDO:0019053,peroxisomal disease,9.519636252843211,3
+MONDO:0019054,congenital limb malformation,0.0,6
+MONDO:0019056,neuromuscular disease,4.4881188421119775,102
+MONDO:0019060,bone neoplasm,3.8124492308424935,154
+MONDO:0019063,vascular anomaly,0.0,2
+MONDO:0019065,amyloidosis,0.0,2
+MONDO:0019086,carcinoma of esophagus,8.515699838284043,10
+MONDO:0019087,cholangiocarcinoma,6.926790153046223,6
+MONDO:0019091,bronchopulmonary dysplasia,7.523561956057013,2
+MONDO:0019118,inherited retinal dystrophy,7.534209200256521,13
+MONDO:0019127,polymyositis,8.523561956057012,9
+MONDO:0019182,inherited obesity,5.706372673894833,4
+MONDO:0019200,retinitis pigmentosa,9.521600439723729,4
+MONDO:0019214,inborn carbohydrate metabolic disorder,4.877744249949002,3
+MONDO:0019216,inborn disorder of amino acid transport,9.521600439723729,4
+MONDO:0019243,inborn disorder of energy metabolism,7.573130740363809,9
+MONDO:0019245,lysosomal lipid storage disorder,4.614709844115208,5
+MONDO:0019255,sphingolipidosis,4.521600439723727,4
+MONDO:0019303,premature aging syndrome,6.161850656725075,18
+MONDO:0019338,sarcoidosis,8.523561956057012,8
+MONDO:0019340,scleroderma,0.0,5
+MONDO:0019356,urogenital tract malformation,9.523561956057012,2
+MONDO:0019462,splenic marginal zone lymphoma,7.511752653767379,2
+MONDO:0019496,neuroendocrine neoplasm,4.59997330085831,18
+MONDO:0019512,congenital heart malformation,0.0,3
+MONDO:0019632,Lyme disease,9.519636252843211,3
+MONDO:0019722,glomerular disorder,0.0,3
+MONDO:0019751,autoinflammatory syndrome,6.118348916932215,14
+MONDO:0019755,developmental defect during embryogenesis,3.238141367079998,65
+MONDO:0019781,astrocytoma (excluding glioblastoma),2.6344813903112736,10
+MONDO:0019792,autosomal dominant cerebellar ataxia type I,0.0,4
+MONDO:0019824,non-acquired pituitary hormone deficiency,0.0,4
+MONDO:0019852,inherited primary ovarian failure,7.579315937580014,6
+MONDO:0019938,anorectal malformation,0.0,3
+MONDO:0019952,congenital myopathy,7.20163386116965,2
+MONDO:0019956,encephalitis,8.523561956057012,10
+MONDO:0020001,respiratory or thoracic malformation,0.0,3
+MONDO:0020010,infectious disorder of the nervous system,6.620428123834596,16
+MONDO:0020018,cranial malformation,9.523561956057012,2
+MONDO:0020019,digestive tract malformation,0.0,3
+MONDO:0020022,central nervous system malformation,0.0,8
+MONDO:0020023,respiratory or mediastinal malformation,0.0,3
+MONDO:0020046,autosomal recessive degenerative and progressive cerebellar ataxia,9.523561956057012,3
+MONDO:0020049,autosomal anomaly,6.0473282676469005,34
+MONDO:0020067,infectious encephalitis,0.0,5
+MONDO:0020072,childhood-onset epilepsy syndrome,8.519636252843213,6
+MONDO:0020073,adolescent-onset epilepsy syndrome,8.519636252843213,6
+MONDO:0020076,myeloproliferative neoplasm,4.011876344966574,137
+MONDO:0020077,myelodysplastic/myeloproliferative disease,9.521600439723729,2
+MONDO:0020120,skeletal muscle disorder,5.836349785610635,34
+MONDO:0020121,muscular dystrophy,6.375981960716554,24
+MONDO:0020122,acquired idiopathic inflammatory myopathy,8.523561956057012,9
+MONDO:0020127,hereditary peripheral neuropathy,6.39920461018175,11
+MONDO:0020128,motor neuron disorder,5.362577163496245,65
+MONDO:0020133,posterior fossa malformation,0.0,2
+MONDO:0020158,eyelids malposition disorder,6.365350375178491,10
+MONDO:0020163,canthal anomaly,0.0,3
+MONDO:0020164,epicanthal fold,0.0,2
+MONDO:0020165,syndromic epicanthus,0.0,2
+MONDO:0020204,conjunctival tumor,9.523561956057012,3
+MONDO:0020238,inherited vitreous-retinal disease,6.527477006060396,17
+MONDO:0020246,inherited vitreoretinopathy,9.523561956057012,4
+MONDO:0020247,congenital vitreoretinal dysplasia,0.0,2
+MONDO:0020285,transposition of the great arteries and conotruncal cardiac anomaly,0.0,2
+MONDO:0020325,anaplastic large cell lymphoma,9.517669388133813,5
+MONDO:0020380,autosomal dominant cerebellar ataxia,9.519636252843211,5
+MONDO:0020511,precursor B-cell acute lymphoblastic leukemia,6.805513575233436,12
+MONDO:0020539,extragonadal non-dysgerminomatous germ cell tumor,9.523561956057012,2
+MONDO:0020560,atypical teratoid rhabdoid tumor,8.515699838284043,2
+MONDO:0020561,myxoid/round cell liposarcoma,9.513727595952435,4
+MONDO:0020562,pleomorphic liposarcoma,7.928765095231281,2
+MONDO:0020579,mucositis,5.539158811108031,7
+MONDO:0020580,germinomatous germ cell tumor,0.0,2
+MONDO:0020590,mycobacterial infectious disease,6.40520100030556,22
+MONDO:0020592,disorder of pharynx,5.703929200626959,12
+MONDO:0020596,mucin-producing carcinoma,7.19377174339668,3
+MONDO:0020598,malabsorption syndrome,9.523561956057012,3
+MONDO:0020633,anaplastic cancer,0.0,10
+MONDO:0020641,respiratory tract neoplasm,4.36018728099898,122
+MONDO:0020663,malignant spindle cell neoplasm,0.0,3
+MONDO:0020664,spindle cell neoplasm,5.82312223791592,3
+MONDO:0020665,high grade malignant neoplasm,4.249418349567945,123
+MONDO:0020683,acute disease,3.626545435055161,182
+MONDO:0020753,Orthocoronavirinae infectious disease,8.519636252843213,10
+MONDO:0020776,chlamydiaceae infections,8.519636252843213,4
+MONDO:0020799,basal cell neoplasm,5.714245517666122,4
+MONDO:0020804,basal cell carcinoma,5.81526012014295,4
+MONDO:0021038,Ewing sarcoma/peripheral primitive neuroectodermal tumor,7.09412657153135,12
+MONDO:0021040,pancreatic neoplasm,6.521600439723727,33
+MONDO:0021042,glioma,4.3531841181410735,126
+MONDO:0021043,mixed neoplasm,0.1513181072609913,18
+MONDO:0021054,bone sarcoma,6.34577483684173,5
+MONDO:0021058,neoplastic syndrome,6.492021272485541,18
+MONDO:0021060,RASopathy,9.523561956057012,2
+MONDO:0021063,malignant colon neoplasm,5.257931672485091,26
+MONDO:0021065,pleural neoplasm,9.523561956057012,5
+MONDO:0021066,urinary system neoplasm,5.401504440302121,52
+MONDO:0021068,ovarian neoplasm,6.039133284186495,43
+MONDO:0021069,malignant endocrine neoplasm,4.059709708915566,131
+MONDO:0021071,laryngeal neoplasm,9.523561956057012,3
+MONDO:0021074,precancerous condition,4.803533211105195,11
+MONDO:0021076,pancreatic exocrine neoplasm,6.93663793900257,24
+MONDO:0021077,cystic neoplasm,7.523561956057013,3
+MONDO:0021079,childhood neoplasm,5.437574310972332,26
+MONDO:0021080,blood vessel neoplasm,7.597549292957025,8
+MONDO:0021084,vision disorder,7.469114172034637,14
+MONDO:0021085,gastric neoplasm,6.616671360448494,23
+MONDO:0021089,peripheral nervous system cancer,8.517669388133811,9
+MONDO:0021094,immunodeficiency disease,3.382918724776511,14
+MONDO:0021095,parkinsonian disorder,4.910501923841733,87
+MONDO:0021096,papillary epithelial neoplasm,6.542778631958895,19
+MONDO:0021100,breast neoplasm,3.875807067211275,190
+MONDO:0021108,meningitis,9.523561956057012,4
+MONDO:0021113,respiratory failure,4.273672926280141,2
+MONDO:0021117,lung neoplasm,4.265572258431991,110
+MONDO:0021118,intestinal neoplasm,4.076306123200214,134
+MONDO:0021120,functioning endocrine neoplasm,9.521600439723729,2
+MONDO:0021124,female infertility,9.523561956057012,6
+MONDO:0021125,disease characteristic,0.0,2
+MONDO:0021138,bone marrow cancer,4.006312182092042,137
+MONDO:0021143,melanocytic neoplasm,4.615337650277336,109
+MONDO:0021144,ovarian clear cell tumor,7.521600439723727,4
+MONDO:0021147,disorder of development or morphogenesis,2.727243108780036,357
+MONDO:0021148,female reproductive system neoplasm,5.184158101615134,70
+MONDO:0021163,kidney neoplasm,5.619224950056903,42
+MONDO:0021166,inflammatory disease,3.544357152845363,194
+MONDO:0021167,myositis disease,8.523561956057012,10
+MONDO:0021178,injury,4.743391863325639,7
+MONDO:0021179,proteostasis deficiencies,4.634206019741005,13
+MONDO:0021181,inherited blood coagulation disorder,0.0,2
+MONDO:0021187,hyperlipidemia,8.521600439723727,2
+MONDO:0021190,DNA repair disease,2.9197801073663943,9
+MONDO:0021193,neuroepithelial neoplasm,3.4823553336986763,245
+MONDO:0021211,brain neoplasm,4.884860751805479,50
+MONDO:0021220,eye neoplasm,7.527477006060396,10
+MONDO:0021223,digestive system neoplasm,3.0109065662716694,301
+MONDO:0021225,uvea neoplasm,9.523561956057012,4
+MONDO:0021227,adrenal gland neoplasm,7.811107056918712,10
+MONDO:0021230,uterine cervix neoplasm,7.449561374613236,16
+MONDO:0021231,retina neoplasm,0.0,2
+MONDO:0021238,cornea neoplasm,9.523561956057012,3
+MONDO:0021240,tongue neoplasm,8.523561956057012,4
+MONDO:0021245,oral cavity neoplasm,8.523561956057012,8
+MONDO:0021246,pharynx neoplasm,3.87320746935223,6
+MONDO:0021248,nervous system neoplasm,3.063388538733984,298
+MONDO:0021251,endometrium neoplasm,7.938599455335857,10
+MONDO:0021254,corpus uteri neoplasm,7.260527550223219,6
+MONDO:0021259,prostate neoplasm,5.208803201623063,65
+MONDO:0021310,malignant tumor of neck,4.737609510731633,6
+MONDO:0021312,malignant tumor of adrenal cortex,9.517669388133813,5
+MONDO:0021315,malignant tumor of nasopharynx,0.0,5
+MONDO:0021321,malignant tumor of extrahepatic bile duct,5.211401637418471,6
+MONDO:0021345,carcinoma of pharynx,0.0,5
+MONDO:0021348,neoplasm of testis,3.39231742277876,2
+MONDO:0021350,neoplasm of thorax,3.1231832976511607,310
+MONDO:0021351,neoplasm of neck,3.87320746935223,6
+MONDO:0021353,tumor of uterus,6.203394319034088,30
+MONDO:0021354,tumor of adipose tissue,7.09412657153135,13
+MONDO:0021355,neoplasm of esophagus,7.938599455335857,13
+MONDO:0021385,extrahepatic bile duct neoplasm,8.521600439723727,6
+MONDO:0021444,benign neoplasm of large intestine,6.3536369546147,4
+MONDO:0021452,benign neoplasm of cornea,9.523561956057012,3
+MONDO:0021454,benign neoplasm of eye,9.523561956057012,3
+MONDO:0021511,benign neoplasm of adrenal gland,8.521600439723727,5
+MONDO:0021525,benign neoplasm of corpus uteri,9.523561956057012,4
+MONDO:0021545,myomatous neoplasm,6.392775348521659,16
+MONDO:0021581,connective tissue neoplasm,3.566925854568244,168
+MONDO:0021583,melanocytic skin neoplasm,5.20163386116965,4
+MONDO:0021634,epithelial skin neoplasm,0.0,5
+MONDO:0021635,neurocristopathy,3.674119096980134,220
+MONDO:0021636,astrocytic tumor,4.73238564862271,85
+MONDO:0021637,low grade glioma,4.723473733186455,26
+MONDO:0021638,low grade astrocytic tumor,2.972901482989342,6
+MONDO:0021639,grade II glioma,6.267740073473096,18
+MONDO:0021640,grade III glioma,6.333900736553439,6
+MONDO:0021656,nongerminomatous germ cell tumor,9.523561956057012,4
+MONDO:0021662,bile duct neoplasm,8.521600439723727,6
+MONDO:0021669,post-infectious disorder,4.850736204778917,41
+MONDO:0021674,post-viral disorder,4.850736204778917,41
+MONDO:0021678,gram-negative bacterial infections,8.519636252843213,9
+MONDO:0021681,sexually transmitted disease,5.926273991281577,38
+MONDO:0021682,viral sexually transmitted disease,6.519636252843213,34
+MONDO:0021697,chlamydia infectious disease,8.519636252843213,4
+MONDO:0021698,alcohol-related disorders,8.26052755022322,10
+MONDO:0021839,spirochaetales infections,9.519636252843211,3
+MONDO:0022034,lentivirus infection,6.519636252843213,34
+MONDO:0022687,cerebellar degeneration,7.199672344836364,5
+MONDO:0022760,chromosome 22q deletion,5.938599455335857,4
+MONDO:0023370,neoplastic disease or syndrome,0.8608235675055917,1600
+MONDO:0023603,hereditary disorder of connective tissue,0.0,13
+MONDO:0023644,lip and oral cavity carcinoma,7.515699838284043,6
+MONDO:0024237,inherited neurodegenerative disorder,3.790178811655145,67
+MONDO:0024239,congenital anomaly of cardiovascular system,0.0,5
+MONDO:0024257,hereditary motor neuron disease,0.0,3
+MONDO:0024276,glandular cell neoplasm,2.702417943293902,312
+MONDO:0024294,skin disorder caused by infection,9.521600439723729,4
+MONDO:0024296,vascular neoplasm,0.3114187360975822,10
+MONDO:0024318,viral infection of central nervous system,0.0,5
+MONDO:0024322,disorder of glycosylation,0.0,5
+MONDO:0024331,colorectal carcinoma,5.301172030996097,57
+MONDO:0024337,urothelial neoplasm,0.0,2
+MONDO:0024338,mucinous neoplasm,9.521600439723729,3
+MONDO:0024341,retinal cell neoplasm,0.0,2
+MONDO:0024352,viral respiratory tract infection,6.980116722883223,20
+MONDO:0024355,respiratory tract infectious disorder,5.792544919070286,30
+MONDO:0024417,perceptual disorders,6.799821249372196,15
+MONDO:0024458,disorder of visual system,4.613311249858846,62
+MONDO:0024468,anterior pituitary gland disorder,0.0,2
+MONDO:0024477,liver and intrahepatic bile duct neoplasm,4.691521620668183,92
+MONDO:0024479,epithelial tumor of colon,4.727827564977706,15
+MONDO:0024481,skin appendage disorder,0.0,3
+MONDO:0024573,familial hypertrophic cardiomyopathy,7.525520809095069,10
+MONDO:0024575,pregnancy disorder,8.523561956057012,10
+MONDO:0024582,male reproductive system neoplasm,5.253825375130648,67
+MONDO:0024610,parasitic skin disorder,9.521600439723729,2
+MONDO:0024615,T-cell and NK-cell neoplasm,6.455240988868482,18
+MONDO:0024619,central nervous system infectious disorder,6.529430554146151,14
+MONDO:0024622,thyroid gland adenocarcinoma,7.928765095231281,14
+MONDO:0024623,otorhinolaryngologic disease,5.0811718864267545,26
+MONDO:0024625,disorder of lacrimal gland,9.523561956057012,3
+MONDO:0024634,large intestine disorder,4.034875244944611,146
+MONDO:0024635,small intestine disorder,7.633744873807435,14
+MONDO:0024637,malignant soft tissue neoplasm,5.679713424008199,37
+MONDO:0024643,myocardial disorder,6.529430554146151,6
+MONDO:0024645,retroperitoneal neoplasm,9.523561956057012,6
+MONDO:0024653,skull neoplasm,8.523561956057012,8
+MONDO:0024654,skull disorder,6.845490050944375,10
+MONDO:0024664,"hypertension, pregnancy-induced",8.521600439723727,10
+MONDO:0024757,cardiovascular neoplasm,0.3114187360975822,10
+MONDO:0024878,secondary carcinoma,5.196631397535921,17
+MONDO:0024879,metastatic carcinoma,5.292552869314867,17
+MONDO:0024880,metastatic malignant neoplasm,5.512316754193524,18
+MONDO:0024881,secondary malignant neoplasm,5.512316754193524,18
+MONDO:0024882,secondary neoplasm,5.276523709427705,18
+MONDO:0024883,metastatic neoplasm,5.276523709427705,18
+MONDO:0024885,malignant ovarian serous tumor,8.246740598493144,10
+MONDO:0025294,tick-borne infectious disease,9.521600439723729,4
+MONDO:0025511,inherited neuroendocrine tumor,9.521600439723729,2
+MONDO:0031199,inherited interstitial lung disease,9.523561956057012,4
+MONDO:0036591,adrenal cortex neoplasm,9.521600439723729,6
+MONDO:0036696,spleen neoplasm,6.521600439723727,6
+MONDO:0036976,benign epithelial neoplasm,6.644043338073375,18
+MONDO:0037254,transitional cell neoplasm,0.0,2
+MONDO:0037255,ovarian serous tumor,7.258566033889933,10
+MONDO:0037256,serous neoplasm,7.226144556197555,10
+MONDO:0037736,infratentorial neoplasm,9.523561956057012,4
+MONDO:0037747,spinal injury,9.523561956057012,2
+MONDO:0037748,hyperlipoproteinemia,8.521600439723727,2
+MONDO:0037792,carbohydrate metabolism disease,4.877744249949002,3
+MONDO:0037847,vertebral joint disorder,0.0,2
+MONDO:0040677,invasive carcinoma,5.373379298236332,22
+MONDO:0040679,urothelial carcinoma,0.0,2
+MONDO:0042983,neurocutaneous syndrome,0.0,5
+MONDO:0043218,neurovascular disorder,6.386537264276728,26
+MONDO:0043424,digestive system infectious disorder,4.614081302884088,20
+MONDO:0043797,spinal cord injury,9.521600439723729,2
+MONDO:0043905,pneumonitis,7.290274893617271,12
+MONDO:0044137,vitreous body disorder,6.527477006060396,17
+MONDO:0044334,connective and soft tissue neoplasm,4.715451394402116,39
+MONDO:0044347,erythrocyte disorder,7.938599455335857,10
+MONDO:0044348,hemoglobinopathy,9.523561956057012,4
+MONDO:0044710,lip and oral cavity squamous cell carcinoma,9.507794640198696,6
+MONDO:0044745,nervous system injury,0.0,5
+MONDO:0044881,hematopoietic and lymphoid cell neoplasm,2.9933773125248697,350
+MONDO:0044925,oral cavity carcinoma,7.252665432450248,6
+MONDO:0044970,mitochondrial disease,7.745954377393461,7
+MONDO:0044986,lymphoid system disorder,4.623197911829344,16
+MONDO:0044991,upper digestive tract disorder,7.523561956057013,17
+MONDO:0044992,mouth mucosa disorder,7.20163386116965,3
+MONDO:0044993,sympathetic nervous system disorder,9.521600439723729,4
+MONDO:0044996,cerebral cortex disorder,9.523561956057012,2
+MONDO:0045002,vertebral disorder,0.0,2
+MONDO:0045010,glycoprotein metabolism disease,0.0,2
+MONDO:0045012,steroid metabolism disease,0.0,3
+MONDO:0045024,cancer or benign tumor,0.8562203528712653,1603
+MONDO:0045048,toxemia of pregnancy,8.521600439723727,10
+MONDO:0100033,metabolic epilepsy,6.712281330785609,3
+MONDO:0100038,complex neurodevelopmental disorder,5.518814398390449,59
+MONDO:0100070,neuroendocrine disorder,8.258566033889933,9
+MONDO:0100081,sleep disorder,0.0,4
+MONDO:0100096,COVID-19,8.519636252843213,10
+MONDO:0100118,hereditary skin disorder,5.716745899378975,40
+MONDO:0100120,vector-borne disease,6.231490328298381,33
+MONDO:0100137,telomere syndrome,7.356574237694254,14
+MONDO:0100191,inherited kidney disorder,0.0,2
+MONDO:0100257,peroxisomal single enzyme/protein defect,9.519636252843211,3
+MONDO:0100308,atactic disorder,7.675565049502063,10
+MONDO:0100309,hereditary ataxia,7.675565049502063,10
+MONDO:0100310,hereditary cerebellar ataxia,7.675565049502063,10
+MONDO:0100329,primary viral infectious disease,4.3732236052716456,127
+MONDO:0100339,Friedreich ataxia,9.523561956057012,3
+MONDO:0100342,malignant glioma,4.476808925132641,117
+MONDO:0100372,disorder of peroxisomal transporter,9.519636252843211,3
+MONDO:0100459,azoospermia,9.523561956057012,2
+MONDO:0100500,Mendelian neurodevelopmental disorder,9.523561956057012,6
+MONDO:0600002,hemorrhagic fever,9.521600439723729,5
+MONDO:0600023,idiopathic inflammatory myopathy,8.523561956057012,9
+MONDO:0700003,obstetric disorder,8.523561956057012,10
+MONDO:0700007,idiopathic disease,6.255860372946058,29
+MONDO:0700014,chromosome 7 disorder,7.938599455335857,2
+MONDO:0700023,chromosome 16 disorder,9.523561956057012,5
+MONDO:0700066,myopathy caused by variation in FKRP,0.0,2
+MONDO:0700092,neurodevelopmental disorder,5.14032754068044,66
+MONDO:0700124,chromosome 21 disorder,6.679681157974295,24
+MONDO:0700220,disease related to transplantation,7.938599455335857,5
+MONDO:0700221,disease related to solid organ transplantation,7.938599455335857,4
+MONDO:0700223,hereditary skeletal muscle disorder,6.272895426436719,26
+MONDO:0800029,interstitial lung disease 2,9.519636252843211,4
+MONDO:0800064,osteogenesis imperfecta and a reduction of bone mineral density.,9.523561956057012,3
+MONDO:0800089,primary bone dysplasia with disorganized development of skeletal components,9.523561956057012,2
