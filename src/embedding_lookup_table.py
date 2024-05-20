@@ -25,7 +25,7 @@ def unique_phrases(corpus: str) -> list:
     return words
 
 
-def generate_embeddings(model_name, text, batch_size = 5000):
+def generate_embeddings(model_name, text, batch_size=5000):
     '''
     Function to generate embeddings for given text
     '''
@@ -35,16 +35,20 @@ def generate_embeddings(model_name, text, batch_size = 5000):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     # load model
     model = AutoModel.from_pretrained(model_name).to(device)
-    
-    # generate embedding in batch
+
+    all_embeddings = []
+
     if device.type == 'cuda':
+        # generate embedding in batch by gpu
+        print('generate embedding by gpu')
+
         # divide text to batches
         batches = [text[i:i + batch_size] for i in range(0, len(text), batch_size)]
+        print('batch size is %s, divide text into %s batches' % (batch_size, len(batches)))
 
         # tokenize input
         print(f'tokenize input for {len(text)} words')
 
-        all_embeddings = []
         for idx, batch in enumerate(batches):
             t0 = time()
             encoded_input = tokenizer.batch_encode_plus(batch, padding=True, return_tensors='pt').to(device)
@@ -59,6 +63,9 @@ def generate_embeddings(model_name, text, batch_size = 5000):
             embeddings = outputs.last_hidden_state[:, 0, :].squeeze().cpu().numpy()
             all_embeddings.append(embeddings)
     else:
+        # generate embedding in using cpu
+        print('generate embedding by cpu')
+
         for word in tqdm(text,
                          total=len(text),
                          desc='generate embeddings using cpu'):
@@ -69,6 +76,7 @@ def generate_embeddings(model_name, text, batch_size = 5000):
 
             embeddings = outputs.last_hidden_state[:, 0, :].squeeze().cpu().numpy()[None, :]
             all_embeddings.append(embeddings)
+
     return np.concatenate(all_embeddings, axis=0)
 
 
@@ -121,7 +129,7 @@ if __name__ == '__main__':
     else:
         raise ValueError("Invalid model name. Currently 'pubmedbert_abs', 'pubmedbert_full', 'bert' are supported.")
 
-    embeddings_array = generate_embeddings(model_name, words)
+    embeddings_array = generate_embeddings(model_name, words, batch_size=args.batch_size)
 
     # save output
     print('saving output...')
