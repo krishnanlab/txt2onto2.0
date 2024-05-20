@@ -74,6 +74,8 @@ if __name__ == '__main__':
     with open(args.id) as f:
         for line in f:
             samples.append(line.rstrip().split('\t')[0])
+    if len(samples) != len(set(samples)):
+        raise Exception (f'Sample ID provided in {args.id} is not unique\n')
     samples = np.array(samples)
 
     # load model
