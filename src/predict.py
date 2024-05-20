@@ -63,6 +63,7 @@ if __name__ == '__main__':
                         type=str)
     args = parser.parse_args()
 
+    ts = time()
     print('loading data')
     t0 = time()
 
@@ -75,7 +76,7 @@ if __name__ == '__main__':
         for line in f:
             samples.append(line.rstrip().split('\t')[0])
     if len(samples) != len(set(samples)):
-        raise Exception (f'Sample ID provided in {args.id} is not unique\n')
+        raise Exception(f'IDs provided in {args.id} is not unique\n')
     samples = np.array(samples)
 
     # load model
@@ -157,4 +158,4 @@ if __name__ == '__main__':
     )
 
     # runtime
-    print('took %.2f min to load, predict, retrieve predictive words and save %s for %s instances' % ((time()-t0)/60, onto, len(samples)))
+    print('took %.2f min to load, predict, retrieve predictive words and save %s for %s instances' % ((time()-ts)/60, onto, len(samples)))
