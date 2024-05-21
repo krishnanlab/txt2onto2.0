@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 # Usage
 ## Making predictions using provided models
-Assume we are going to run code in the src folder. We will use the following code to showcase the usage. We will use studies from ClinicalTrials as input and see which metadata is related to atrial fibrillation (MONDO:0004981).
+Assume we are going to run code in the src folder. We will use the following code to showcase the implementation of *txt2onto 2.0* using studies from ClinicalTrials as input and see which metadata are related to atrial fibrillation (MONDO:0004981).
 
 Input for making predictions is the concatenated text from metadata, with one description per line. The metadata is sourced from ClinicalTrials. [Here](https://github.com/krishnanlab/txt2onto2.0/blob/main/data/clinicaltrials_desc.tsv) are the first few lines of an example using concatenated metadata from ClinicalTrials:
 
@@ -42,13 +42,13 @@ python ../src/preprocess.py \
 ```
 We read the concatenated metadata from `../data/clinicaltrials_desc.tsv `, then get processed text `../data/clinicaltrials_desc_processed.tsv`, in which uninformative elements have been cleaned.
 
-Step 2: Generate embedding table for given text data from clinicaltrials
+Step 2: Generate an embedding table for given text data from ClinicalTrials
 ```
 python ../src/embedding_lookup_table.py \
 -corpus ../data/clinicaltrials_desc_processed.tsv \
 -out ../data/clinicaltrials_desc_embedding.npz
 ```
-We read `../data/clinicaltrials_desc_processed.tsv` as input, get all words in the text, then calculate text embedding of each word. Although this script support using CPU to generate embeddding, but it is going to take hours for thousands of words. We recommend use GPU for fast embedding generation. Default model to generate embedding is [BiomedBERT](https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract) pretrained on abstract from PubMed.
+We read `../data/clinicaltrials_desc_processed.tsv` as input, get all words in the text, then calculate text embedding of each word. Although this script supports using CPUs to generate embeddings, it will take hours for thousands of words. We recommend using GPU for fast embedding generation. The default model to generate embedding is [BiomedBERT](https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract) pretrained on abstracts from PubMed.
 
 Step 3: Predict labels
 ```
@@ -69,7 +69,7 @@ We read the following files as input:
 - `-model` is used to input the model file. In this example, the model file `../results/MONDO_0004981__model.pkl` is for atrial fibrillation (MONDO:0004981) prediction.
 
 This script produces the following output:
-- `-out` specifies the output directory. The output from this code will be `../results/MONDO_0004981__preds.csv`, which includes the probability of prediction for every input metadata and task-related words for the predictions. Here is the first few lines of the output.
+- `-out` specifies the output directory. The output from this code will be `../results/MONDO_0004981__preds.csv`, which includes the probability of prediction for every input metadata and task-related words for each prediction. Here is the first few lines of the output.
 
 | ID           | prob                | log2(prob/prior)    | related_words             |
 |--------------|--------------------:|--------------------:|---------------------------|
@@ -78,9 +78,9 @@ This script produces the following output:
 | NCT01796080  | 0.5746653363470876  | 8.237360063179139   | atrial, supraventricular  |
 | NCT00848445  | 0.4652301906664786  | 7.932582756502403   | af, atrial                |
 
-`ID` is the ID of every instance, in this case, is the study ID from ClinicalTrials. `prob` is the prediction probability. `log2(prob/prior)` is the probability normalized by `prior`, where `prior` represents the expected random prediction for this model. Thus, `log2(prob/prior)` indicates how much this prediction is better than random. The final column `related_words` represent words in the given text that are related to predictions. `prob` might be underestimated when very few positive instances are included during training. `log2(prob/prior)` is a good indicator of good performance. Generally `log2(prob/prior) >= 2` means trustable positive predictions.
+`ID` is the ID of every instance, in this case, is the study ID from ClinicalTrials. `prob` is the prediction probability. `log2(prob/prior)` is the probability normalized by `prior`, where `prior` represents the expected random prediction for this model. Thus, `log2(prob/prior)` indicates how much this prediction is better than random. The final column `related_words` represents words in the given text that are related to predictions. `prob` might be underestimated when very few positive instances are included during training. `log2(prob/prior)` is a good indicator of good performance. Generally `log2(prob/prior) >= 2` means trustable positive predictions.
 
-Beside the example we showed here, we also provide a collection of models for tissue and disease classification. All available models are under `../bin`. The files `../data/*_model_stats.csv` specify the performance of all models. Generally, if `log2(auprc/prior) >= 2`, it indicates a good model.
+Besides the example we showed here, we also provide a collection of models for tissue and disease classification. All available models are under `../bin`. The files `../data/*_model_stats.csv` specify the performance of all models. Generally, if `log2(auprc/prior) >= 2`, it indicates a good model.
 
 ## Training new models
 Besides making predictions using the provided models, users can also train their own models. Again, assume we are running code in the `src` folder. We will demonstrate this by training a model for atrial fibrillation (MONDO:0004981) predictions.
@@ -93,7 +93,7 @@ python ../src/preprocess.py \
 ```
 First, we preprocess the training text, which is also concatenated text from metadata. Here, we take `../data/disease_desc.tsv` as input, which includes all the positive and negative instances of atrial fibrillation (MONDO:0004981). The preprocessed text will be outputted to `../data/disease_desc_processed.tsv`, where uninformative elements were cleaned. Notably, it is common to train multiple models simultaneously, and the training data for those models might overlap. To streamline the process, users can include all the metadata required for training all the models in a single file.
 
-Step 2: generate embedding table for training data
+Step 2: generate an embedding table for training data
 ```
 python ../src/embedding_lookup_table.py \
 -corpus ../data/disease_desc_processed.tsv \
@@ -111,7 +111,7 @@ python ../src/input.py \
 -out ../data
 ```
 Before training the model, we need to prepare an input, which requires the following files as input:
-- `-gs`  is a CSV file for the gold standard, which specifies the ground truth label for the correspondence between an instance and a term. In this file, each column is an ontology, and each row is an instance. Each cell corresponds to the category of the instance, either positive (1), negative (-1), or unknown (0). Please check `../data/disease_labels.csv.gz` for detail. Here is a snapshot of the gold standard file:
+- `-gs`  is a CSV file for the gold standard, which specifies the ground truth label for the correspondence between an instance and a term. In this file, each column is an ontology, and each row is an instance. Each cell corresponds to the category of the instance, either positive (1), negative (-1), or unknown (0). Please check `../data/disease_labels.csv.gz` for details. Here is a snapshot of the gold standard file:
 
 |      | MONDO:0000001 | MONDO:0000004 | MONDO:0000005 |
 |-----------|--------------:|--------------:|--------------:|
@@ -126,7 +126,7 @@ Before training the model, we need to prepare an input, which requires the follo
 - `-id` is the ID of the training instances. The row number of the ID file should correspond to the description from the input text. Users can include multiple columns to provide additional information about each instance, but only the first column will be used in the analysis. The first column must contain unique IDs for each instance.
 
 This script produces the following output:
-- `-out` specifies the output directory, in this example the output will be `../data/MONDO_0004981__train_input.tsv`. The output file contains the ID, label, and text required for training a model. The prepared input file looks like:
+- `-out` specifies the output directory, in this example the output will be `../data/MONDO_0004981__train_input.tsv`. The output file contains the ID, label, and text required for training a model. The prepared input file is formatted in this structure:
 ```
 ID	label	text
 ID1  1  TEXT
@@ -134,7 +134,7 @@ ID2 -1  TEXT
 ID3 -1  TEXT
 ID4  1  TEXT  
 ```
-where the first columns is ID, the second column is label and the last column is the processed text. 
+where the first column is ID, the second column is label and the last column is the processed text. 
 
 Step 4: train LR + word model
 ```
@@ -142,12 +142,12 @@ python ../src/train.py \
 -input ../data/MONDO_0004981__train_input.tsv \
 -out ../results
 ```
-Finally, we train the model for atrial fibrillation (MONDO:0004981) prediction, which take prepared text `../data/MONDO_0004981__train_input.tsv` as input, then output trained model to output directory `../results`, the output model will be `../results/MONDO_0004981__model.pkl`.
+Finally, we train the model for atrial fibrillation (MONDO:0004981) prediction, which takes prepared text `../data/MONDO_0004981__train_input.tsv` as input, then output trained model to output directory `../results`, the output model will be `../results/MONDO_0004981__model.pkl`.
 
 # Overview of the repository
-Here, we list files we included in the repository.
+Here, we list the files we included in the repository.
 - `bin` contains all provided models stored as pickle files.
-- `data` folder contains files other than models required for prediction and also files generated for demo.
+- `data` folder contains files other than models required for prediction and also files generated for the demo.
   - Input files required for disease and tissue prediction:
     - `disease_desc_embedding.npz`: word embedding matrix for features in the provided disease models
     - `tissue_desc_embedding.npz`: word embedding matrix for features in the provided tissue models
@@ -155,37 +155,37 @@ Here, we list files we included in the repository.
     - `disease_model_stats.csv`: full list of provided disease models
     - `tissue_model_stats.csv`: full list of provided tissue models
   - Demo files included in section [Making prediction using provided models](#making-prediction-using-provided-models)
-    - `clinicaltrials_ID.tsv`: Study ID from ClinicalTrial
+    - `clinicaltrials_ID.tsv`: Study ID from ClinicalTrials
     - `clinicaltrials_desc.tsv`: Corresponding unprocessed descriptions
     - `clinicaltrials_desc_processed.tsv`: Processed text
-    - `clinicaltrials_desc_embedding.npz`: Word embeddings for every words in processed text
-  - Data from manuscript. Some of them also included in demo showed above
+    - `clinicaltrials_desc_embedding.npz`: Word embeddings for every word in the processed text
+  - Data from manuscript. Some of them are also included in the demo outlined above
     - Disease classification
       - `disease_ID.tsv`: Study ID from GEO
       - `disease_desc.tsv`: Corresponding unprocessed descriptions for studies
       - `disease_desc_processed.tsv`: Processed text for studies
-      - `disease_desc_embedding.npz`: Word embeddings for every words in processed text
+      - `disease_desc_embedding.npz`: Word embeddings for every word in processed text
       - `disease_labels.csv.gz`: Curated gold standard matrix for diseases, labels have been propagated to general terms
-      - `MONDO_0004981__train_input.tsv`: Prepared input file to train model for atrial fibrillation (MONDO:0004981) prediction
+      - `MONDO_0004981__train_input.tsv`: Prepared input file to train a model for atrial fibrillation (MONDO:0004981) prediction
     - Tissue classification
       - `tissue_ID.tsv`: Sample ID (the first column) and study ID (the second column) from GEO
       - `tissue_desc.tsv`: Corresponding unprocessed descriptions for samples
       - `tissue_desc_processed.tsv`: Processed text for samples
-      - `tissue_desc_embedding.npz`: Word embeddings for every words in processed text
+      - `tissue_desc_embedding.npz`: Word embeddings for every word in the processed text
       - `tissue_labels.csv.gz`: Curated gold standard matrix for tissues, labels have been propagated to general terms
-      - `UBERON_0019319__train_input.tsv`: Prepared input file to train model for exocrine gland of integumental system (UBERON:0019319). We did not showcase the example in the demo above, but we included in `src/demo.sh` users can check commands showed there to train a tissue classification model.
+      - `UBERON_0019319__train_input.tsv`: Prepared input file to train a model for exocrine gland of integumental system (UBERON:0019319). We did not showcase the example in the demo above, but we included it in `src/demo.sh` so users can check the commands shown there to train a tissue classification model.
     - `results`: Files generated from the demo
       - `MONDO_0004981__model.pkl`: Trained model for atrial fibrillation (MONDO:0004981) prediction
-      - `MONDO_0004981__preds.csv`: Atrial fibrillation (MONDO:0004981) prediction on Clinicaltrials studies
+      - `MONDO_0004981__preds.csv`: Atrial fibrillation (MONDO:0004981) prediction on ClinicalTrials studies
       - `UBERON_0019319__model.pkl`: Trained model for exocrine gland of integumental system (UBERON:0019319)
     - `src`: Scripts for *txt2onto 2.0*
-      - `demo.sh`: Demo script for using provided model for predictions and training a new model
+      - `demo.sh`: Demo script for using the provided model for predictions and training a new model
       - `embedding_lookup_table.py`: Script to generate word embedding matrix
       - `preprocess.py`: Script to preprocess text
       - `input.py`: Script to prepare input for training
       - `train.py`: Script to train models using prepared input
       - `predict.py`: Script to predict labels
-      - `tfidf_calculator.py`: Modules use to calculate TF-IDF
+      - `tfidf_calculator.py`: Modules used to calculate TF-IDF
       - `model_builder.py`: Modules used to build classification models
 
 # Additional Information
