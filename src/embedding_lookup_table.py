@@ -5,7 +5,7 @@ from transformers import AutoTokenizer, AutoModel
 from pathlib import Path
 from time import time
 from tqdm import tqdm
-
+import warnings
 
 def unique_words(corpus: str) -> list:
     words = []
@@ -25,12 +25,27 @@ def unique_phrases(corpus: str) -> list:
     return words
 
 
+def ignore_future_warnings(func):
+    warnings.simplefilter("ignore", category=FutureWarning)
+    return func
+
+
+@ignore_future_warnings
 def generate_embeddings(model_name, text, batch_size=5000):
     '''
     Function to generate embeddings for given text
     '''
     # set device
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    def get_device():
+        if torch.cuda.is_available():
+            device = torch.device("cuda")
+        elif torch.backends.mps.is_available():
+            device = torch.device("mps")
+        else:
+            device = torch.device("cpu")
+        return device
+
+    device = get_device()
     # load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     # load model
@@ -38,7 +53,7 @@ def generate_embeddings(model_name, text, batch_size=5000):
 
     all_embeddings = []
 
-    if device.type == 'cuda':
+    if device.type != 'cpu':
         # generate embedding in batch by gpu
         print('generate embedding by gpu')
 
@@ -82,11 +97,11 @@ def generate_embeddings(model_name, text, batch_size=5000):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("-corpus",
+    parser.add_argument("-input",
                         help="Path to word corpus",
                         required=True,
                         type=str)
-    parser.add_argument("-outfile",
+    parser.add_argument("-out",
                         help="Output directory to send embedding matrices to",
                         default=None,
                         type=str)
@@ -106,18 +121,19 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # get name of outfile
-    if not args.outfile:
-        outfile = '%s/%s_embeddings.npz' % (Path(args.corpus).resolve().parent,
-                                            Path(args.corpus).resolve().stem)
+    if not args.out:
+        outfile = '%s/%s_embeddings.npz' % (Path(args.input).resolve().parent,
+                                            Path(args.input).resolve().stem)
     else:
-        outfile = args.outfile
+        outfile = args.out
 
     # get unique words in corpus
     print('get unique words')
     if not args.ner:
-        words = unique_words(args.corpus)
+        words = unique_words(args.input)
     else:
-        words = unique_phrases(args.corpus)
+        words = unique_phrases(args.input)
+    print('there are %s unique words in the given descriptions' % (len(words)))
 
     # load language model
     if args.model.lower() == 'biomedbert_abs':
