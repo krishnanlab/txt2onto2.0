@@ -1,11 +1,4 @@
 ####################################################
-# install env
-####################################################
-conda create -n txt2onto2 python==3.9.16
-conda activate txt2onto2
-pip install -r requirements.txt
-
-####################################################
 # disease model training
 ####################################################
 # preprocess input text
