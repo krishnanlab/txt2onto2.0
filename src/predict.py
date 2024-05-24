@@ -98,7 +98,7 @@ if __name__ == '__main__':
     desc_df = pd.read_csv(args.input, header=None, index_col=None, sep='\t')
 
     # runtime
-    print('took %.2f min to load data' % ((time()-t0)/60))
+    print('took %.2f s to load data' % ((time()-t0)))
 
     print('predicting labels')
     t0 = time()
@@ -127,7 +127,7 @@ if __name__ == '__main__':
     preds = model.predict(input_tfidf)
 
     # runtime
-    print('took %.2f min to predict' % ((time()-t0)/60))
+    print('took %.2f s to predict' % ((time()-t0)))
 
     print('retrieving predictive words')
     t0 = time()
@@ -144,7 +144,7 @@ if __name__ == '__main__':
         related_word_dict[samples[i]].extend(input_features[related_words_idx])
 
     # runtime
-    print('took %.2f min to retrieve predictive words' % ((time()-t0)/60))
+    print('took %.2f s to retrieve predictive words' % ((time()-t0)))
 
     print('saving output')
     # save prediction
