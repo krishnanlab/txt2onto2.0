@@ -242,34 +242,16 @@ Here, we list the files we included in the repository.
       - `tissue_ID.tsv`: Sample ID (the first column) and study ID (the second column) from GEO
       - `tissue_desc.tsv`: Corresponding unprocessed descriptions for samples
       - `tissue_labels.csv.gz`: Curated gold standard matrix for tissues, labels have been propagated to general terms
-- `results` intermediate and final output from demo
-  - files produced during label prediction (from `demo_prediction.sh`)
-    - `clinicaltrials_desc_processed.tsv`: processed descriptions from ClinicalTrials
-    - `clinicaltrials_desc_embedding.npz`: word embedding from ClinicalTrials
-    - `MONDO_0004981__preds.csv`: Atrial fibrillation (MONDO:0004981) prediction on ClinicalTrials studies
-    - `geo_sample_desc_processed.tsv`: processed descriptions from GEO
-    - `geo_sample_desc_embedding.npz`: word embedding from GEO
-    - `CL_0002092__preds.csv`: Bone marrow cell (CL:0002092) prediction on GEO
-  - files produced during building disease classification (from `demo_training.sh`)
-      - `disease_desc_processed.tsv`: Processed text for metadata from GEO studies
-      - `disease_demo_desc_embedding.npz`: Word embeddings for every word in processed text for GEO studies
-      - `MONDO_0004981__train_input.tsv`: Prepared input file to train a model for atrial fibrillation (MONDO:0004981) prediction
-      - `MONDO_0004981__model.pkl`: Trained model for atrial fibrillation (MONDO:0004981)
-  - files produced during building tissue classification (from `demo_training.sh`)
-      - `tissue_desc_processed.tsv`: Processed text for metadata from GEO samples
-      - `tissue_demo_desc_embedding.npz`: Word embeddings for every word in the processed text for GEO samples
-      - `CL_0002092__train_input.tsv`: Prepared input file to train a model for bone marrow cell (CL:0002092)
-      - `CL_0002092__model.pkl`: Trained model for bone marrow cell (CL:0002092)
-- `src`: Scripts for *txt2onto 2.0*
-  - scripts required for training and prediction
-    - `preprocess.py`: Script to preprocess text
-    - `embedding_lookup_table.py`: Script to generate word embedding matrix
-    - `predict.py`: Script to predict labels
-    - `input.py`: Script to prepare input for training
-    - `train.py`: Script to train models using prepared input
-  - other utility scripts:
-    - `tfidf_calculator.py`: Modules used to calculate TF-IDF
-    - `model_builder.py`: Modules used to build classification models
+- `results`: Dir to put intermediate and final output from demo
+- scripts required for training and prediction
+  - `preprocess.py`: Script to preprocess text
+  - `embedding_lookup_table.py`: Script to generate word embedding matrix
+  - `predict.py`: Script to predict labels
+  - `input.py`: Script to prepare input for training
+  - `train.py`: Script to train models using prepared input
+- other utility scripts:
+  - `tfidf_calculator.py`: Modules used to calculate TF-IDF
+  - `model_builder.py`: Modules used to build classification models
 
 # Additional Information
 
