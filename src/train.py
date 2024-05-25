@@ -35,6 +35,9 @@ if __name__ == "__main__":
     # time the code
     t_all = time()
 
+    t0 = time()
+    print('loading data')
+
     # get task name from input
     onto = Path(args.input).resolve().stem.split('__')[0]
 
@@ -42,6 +45,12 @@ if __name__ == "__main__":
     desc_df = pd.read_csv(args.input, header=0, index_col=None, sep='\t')
     label = np.array(desc_df['label'])
     text = np.array(desc_df['text'])
+
+    # runtime
+    print('took %.2f s to load data' % ((time()-t0)))
+
+    t0 = time()
+    print('training model')
 
     # calculate tfidf and idf of training data
     tfidf_calculator = TfidfCalculator(text)
@@ -53,7 +62,11 @@ if __name__ == "__main__":
     model = model_builder.LogisticRegressionModel(C=args.c, l1r=args.l1r)
     model.fit(trn_tfidf, label)
 
+    # runtime
+    print('took %.2f s to train model' % ((time()-t0)))
+
     # save coef, words feature and idf to a dict
+    print('saving output')
     param = {}
     param['coef'] = model.get_coef()
     param['words'] = trn_word_features
@@ -63,4 +76,4 @@ if __name__ == "__main__":
     with open(f'{args.out}/{onto}__model.pkl', 'wb') as f:
         pickle.dump(param, f)
 
-    print('took %.2f min to run in total' % ((time()-t_all)/60))
+    print('took %.2f s to run in total' % ((time()-t_all)))
