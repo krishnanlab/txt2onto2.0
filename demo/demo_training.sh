@@ -1,51 +1,49 @@
-####################################################
-# disease model training
-####################################################
+# Here, we replicate the process of disease model training in the paper to demonstrate process of training a new model, using atrial fibrillation (MONDO:0004981) as example
+
 # preprocess input text
-python ../src/preprocess.py \
--input ../data/disease_desc.tsv \
--out ../data/disease_desc_processed.tsv
+python preprocess.py \
+-input ../demo/disease_desc.tsv \
+-out ../results/disease_desc_processed.tsv
 
 # generate embedding table for training data (required GPU for fast embedding generation)
-python ../src/embedding_lookup_table.py \
--corpus ../data/disease_desc_processed.tsv \
--out ../data/disease_desc_embedding.npz
+python embedding_lookup_table.py \
+-input ../results/disease_desc_processed.tsv \
+-out ../results/disease_demo_desc_embedding.npz
 
 # prepare train inputs
-python ../src/input.py \
+python input.py \
 -onto MONDO:0004981 \
--gs ../data/disease_labels.csv.gz \
--text ../data/disease_desc_processed.tsv \
--id ../data/disease_ID.tsv \
--out ../data
-
-# train LR + word model
-python ../src/train.py \
--input ../data/MONDO_0004981__train_input.tsv \
+-gs ../demo/disease_labels.csv.gz \
+-text ../results/disease_desc_processed.tsv \
+-id ../demo/disease_ID.tsv \
 -out ../results
 
-####################################################
-# tissue model training
-####################################################
+# train LR + word model
+python train.py \
+-input ../results/MONDO_0004981__train_input.tsv \
+-out ../results
+
+# We also replicate the process of tissue model training in the paper to demonstrate process of training a new model, using bone marrow cell (CL:0002092) as example
+
 # preprocess input text
-python ../src/preprocess.py \
--input ../data/tissue_desc.tsv \
--out ../data/tissue_desc_processed.tsv
+python preprocess.py \
+-input ../demo/tissue_desc.tsv \
+-out ../results/tissue_desc_processed.tsv
 
 # generate embedding table for training data (required GPU for fast embedding generation)
-python ../src/embedding_lookup_table.py \
--corpus ../data/tissue_desc_processed.tsv \
--out ../data/tissue_desc_embedding.npz
+python embedding_lookup_table.py \
+-input ../results/tissue_desc_processed.tsv \
+-out ../results/tissue_demo_desc_embedding.npz
 
 # prepare train inputs
-python ../src/input.py \
--onto UBERON:0019319 \
--gs ../data/tissue_labels.csv.gz \
--text ../data/tissue_desc_processed.tsv \
--id ../data/tissue_ID.tsv \
--out ../data
+python input.py \
+-onto CL:0002092 \
+-gs ../demo/tissue_labels.csv.gz \
+-text ../results/tissue_desc_processed.tsv \
+-id ../demo/tissue_ID.tsv \
+-out ../results
 
 # train LR + word model
-python ../src/train.py \
--input ../data/UBERON_0019319__train_input.tsv \
+python train.py \
+-input ../results/CL_0002092__train_input.tsv \
 -out ../results
