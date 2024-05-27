@@ -199,13 +199,13 @@ We need input from users:
 - `-id` is the ID of the training instances that need to be provided by users in **Step 1: Prepare input** in this section.
 
 This script produces the output to `path_to_output_directory`. The output file is `path_to_output_directory/<name_of_task>__train_input.tsv`. The output file contains the ID, label, and text required for training a model. The prepared input file is formatted in the following structure:
-```
-ID	label	text
-ID1  1  TEXT
-ID2 -1  TEXT
-ID3 -1  TEXT
-ID4  1  TEXT  
-```
+|     ID   | label    |text         |
+|----------|---------:|-------------|
+| ID1      | 1        |TEXT         |
+| ID2      | 0        |TEXT         |
+| ID3      | 0        |TEXT         |
+| ID4      | 1        |TEXT         |
+
 where the first column is ID, the second column is label and the last column is the processed text. 
 
 ### Step 5: Train model
