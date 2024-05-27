@@ -8,7 +8,8 @@ python preprocess.py \
 # generate embedding table for training data (required GPU for fast embedding generation)
 python embedding_lookup_table.py \
 -input ../results/disease_desc_processed.tsv \
--out ../results/disease_demo_desc_embedding.npz
+-out ../results/disease_demo_desc_embedding.npz \
+-batch_size 2000
 
 # prepare train inputs
 python input.py \
@@ -33,11 +34,12 @@ python preprocess.py \
 # generate embedding table for training data (required GPU for fast embedding generation)
 python embedding_lookup_table.py \
 -input ../results/tissue_desc_processed.tsv \
--out ../results/tissue_demo_desc_embedding.npz
+-out ../results/tissue_demo_desc_embedding.npz \
+-batch_size 2000
 
 # prepare train inputs
 python input.py \
--onto CL:0002092 \
+-onto CL:0000082 \
 -gs ../demo/tissue_labels.csv.gz \
 -text ../results/tissue_desc_processed.tsv \
 -id ../demo/tissue_ID.tsv \
@@ -45,5 +47,5 @@ python input.py \
 
 # train LR + word model
 python train.py \
--input ../results/CL_0002092__train_input.tsv \
+-input ../results/CL_0000082__train_input.tsv \
 -out ../results
