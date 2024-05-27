@@ -75,5 +75,14 @@ if __name__ == "__main__":
     param['prior'] = np.mean(label)
     with open(f'{args.out}/{onto}__model.pkl', 'wb') as f:
         pickle.dump(param, f)
+    
+    # output predictive words
+    pred_idx = np.argwhere(model.get_coef() > 0).reshape(-1)
+    pred_features_df = pd.DataFrame(zip(trn_word_features[pred_idx], model.get_coef()[pred_idx]), columns=['pred_features', 'coef'])
+    pred_features_df.to_csv(
+        f'{args.out}/{onto}__pred_features.csv',
+        header=True,
+        index=False,
+    )
 
     print('took %.2f s to run in total' % ((time()-t_all)))
