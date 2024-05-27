@@ -9,7 +9,8 @@ python preprocess.py \
 # generate embedding table for given text data from clinicaltrials
 python embedding_lookup_table.py \
 -input ../results/clinicaltrials_desc_processed.tsv \
--out ../results/clinicaltrials_desc_embedding.npz
+-out ../results/clinicaltrials_desc_embedding.npz \
+-batch_size 2000
 
 # predict disease labels for studies from clinicaltrials
 python predict.py \
