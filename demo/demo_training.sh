@@ -24,7 +24,7 @@ python train.py \
 -input ../results/MONDO_0004981__train_input.tsv \
 -out ../results
 
-# We also replicate the process of tissue model training in the paper to demonstrate process of training a new model, using bone marrow cell (CL:0002092) as example
+# We also replicate the process of tissue model training in the paper to demonstrate process of training a new model, using bone marrow cell (CL:0000082) as example
 
 # preprocess input text
 python preprocess.py \
