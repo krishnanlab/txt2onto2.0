@@ -41,10 +41,9 @@ if __name__ == '__main__':
     desc_df.columns = ['text']
     desc_df['ID'] = ID_list
     desc_df['label'] = list(gs_df.loc[desc_df['ID'], args.onto])
+    desc_df = desc_df[desc_df['label'] != 0]
     desc_df['label'] = [0 if i == -1 else 1 for i in desc_df['label']]
     desc_df = desc_df.loc[:, ['ID', 'label', 'text']]
-
-    # preprocess text
 
     # save output
     desc_df.to_csv(
