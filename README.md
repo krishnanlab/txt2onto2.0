@@ -8,22 +8,22 @@ Here is a summary of comparison between *txt2onto 1.0* and *2.0*
 
 | Feature | *txt2onto 1.0* | *txt2onto 2.0* |
 |----------|----------|----------|
-| Tissue classification (UBERON) | yes | yes |
+| Tissue classification (UBERON ontology) | yes | yes |
 | Number of tissue classification models | 296 | 402 |
-| Cell type classification (CL) | yes | yes |
+| Cell type classification (CL ontology) | yes | yes |
 | Number of cell type classification models | 50 | 188 |
-| Disease classification (MONDO) | no | yes |
+| Disease classification (MONDO ontology) | no | yes |
 | Number of Disease classification models | 0 | 1,166 |
-| Interpretable training features | no | yes |
+| Interpretable model features | no | yes |
 | Extracting predictive words from input metadata | no | yes |
 
 # Installation
 
-Install enviroments
+Install environments
 ```
 git clone https://github.com/krishnanlab/txt2onto2.0.git
 cd txt2onto2.0
-conda create -n txt2onto2 python==3.9.16
+conda create -n txt2onto2 python==3.12.3
 conda activate txt2onto2
 pip install -r requirements.txt
 ```
@@ -35,7 +35,7 @@ Assume we are going to run code in the `src` folder. We will use the following t
 We also provide `../demo/demo_prediction.sh` as example to demonstrate using *txt2onto 2.0* for prediction.
 
 ### Models
-To figure out what models are avaliable in *txt2onto 2.0*. Users can check `../data/disease_model_stats.csv` for disease models and `../data/tissue_model_stats.csv` for tissue and cell type models. Here we show few beginning lines of the table:
+To figure out what models are available in *txt2onto 2.0*. Users can check `../data/disease_model_stats.csv` for disease models and `../data/tissue_model_stats.csv` for tissue and cell type models. Here we show few beginning lines of the table:
 
 | ID           | name                                          | log2(auprc/prior) | num_of_pos | pred_words | coef |
 |--------------|-----------------------------------------------|-------------------|------------| -----------| ------------|
@@ -48,12 +48,12 @@ To figure out what models are avaliable in *txt2onto 2.0*. Users can check `../d
 Each column are:
 - `ID`: The first column provides the ID for the tissue or disease. Tissue IDs come from the CL and UBERON ontologies, while disease IDs come from the MONDO ontology.
 - `name`: The second column contains the name of the tissue or disease term.
-- `log2(auprc/prior)`: The third column indicates the performance of the model, which is evaluated based on metadata from GEO. Generally, `log2(AUPRC/prior) >= 2` indicates a good model.
+- `log2(auprc/prior)`: The third column indicates the performance of the model, which is evaluated based on metadata from GEO. Generally, `log2(auprc/prior) >= 2` indicates a good model.
 - `num_of_pos`: The fourth column shows the number of positive instances used during the training of the model.
 - `pred_words`: The fifth column lists the predictive word features of the model, ordered in descending order of their coefficients.
 - `coef`: The final column provides the coefficient value for each predictive word feature, higher means more important to the predictions.
 
-We used study-level metadata from GEO to train disease classification models, and used sample-level metadata from GEO to train tissue classification models. Notably, we did not train a disease classification model for sample-level metadata, since in GEO, disease information is often only available in study-level metadata. Study-level metadata typically do not include explicit information for tissues, thus, we also did not train a tissue classification model for study-level metadata. As far as we know, this rule generally applies to metadata from any databases, so we recommend use study-level metadata to predict diseases, and sample-level metadata to predict tissues.
+We used study-level metadata from GEO to train disease classification models, and used sample-level metadata from GEO to train tissue classification models. Notably, we did not train a disease classification model for sample-level metadata, since disease information is often only available in study-level metadata in GEO. Study-level metadata typically do not include explicit information for tissues, thus, we also did not train a tissue classification model for study-level metadata. As far as we know, this rule generally applies to metadata from any databases, so we recommend use study-level metadata to predict diseases, and sample-level metadata to predict tissues.
 
 ### Step 1: Prepare user input
 Input for making predictions is the concatenated text from metadata, with one description per line. Here we use an example study [NCT00313209](https://clinicaltrials.gov/study/NCT00313209) from ClinicalTrial to show how to generate description.
@@ -89,17 +89,17 @@ python preprocess.py \
 We read the concatenated metadata from `path_to_description_file.tsv`, then output processed text `path_to_processed_description_file.tsv`, in which uninformative elements have been cleaned.
 
 ### Step 3: Generate an embedding table for unique words in metadata
-Now, we need to generate word embedding for all unique words in the given descriptions. We need this embedding to map the unseen words in the descriptions to training features in the provided models. 
-
+We need to generate word embedding for all unique words in the preprocessed descriptions. We need this embedding to map the unseen words in the descriptions to training features in the provided models.
 ```
 python embedding_lookup_table.py \
 -input <path_to_processed_description_file.tsv> \
 -out <path_to_embedding_table.npz> \
 -batch_size 5000
 ```
-We read `path_to_processed_description_file.tsv` as input, get all unique words in the text, then calculate text embedding of each word, and output to `path_to_embedding_table.npz`. Although this script supports using CPUs to generate embeddings, we recommend using GPU for fast embedding generation, which generate embeddings faster. The default model to generate embedding is [BiomedBERT](https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract) pretrained on abstracts from PubMed. By default, when using a GPU, the batch size for calculating embeddings is set to 5,000. However, if this exceeds the available VRAM of your computational resource, you can reduce the `-batch_size` parameter to accommodate your hardware constraints.
+We read `path_to_processed_description_file.tsv` as input, get all unique words in the text, then calculate text embedding of each word, and output to `path_to_embedding_table.npz`. Although this script supports using CPUs to generate embeddings, we recommend using GPU for faster embedding generation. The default model to generate embedding is [BiomedBERT](https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract) pretrained on abstracts from PubMed. By default, when using a GPU, the batch size for calculating embeddings is set to 5,000. However, if this exceeds the available VRAM of your computational resource, you can reduce the `-batch_size` parameter to accommodate your hardware constraints.
 
 ### Step 4: Predict labels
+Now, we can use previously generated files to predict disease or tissue labels
 ```
 python ../src/predict.py \
 -input <path_to_processed_description_file.tsv> \
@@ -111,15 +111,15 @@ python ../src/predict.py \
 ```
 
 This script takes following files that generated from previous steps:
-- processed description `path_to_processed_description_file.tsv`
-- correponding ID file `path_to_ID_file.tsv`
-- embedding of the descriptions `path_to_embedding_table.npz`
+- Processed description; `path_to_processed_description_file.tsv` from step 2.
+- Corresponding ID file: `path_to_ID_file.tsv` from user input.
+- Embedding of the descriptions: `path_to_embedding_table.npz` from step 3.
 
-We also need embeddings for disease or tissue model features, and these files are provided under `../data/`. We need to input diease model features embedding  `../data/disease_desc_embedding.npz` for disease classifications, or tissue model features embedding `../data/tissue_desc_embedding.npz` for tissue classifications.
+We also need embeddings for disease or tissue model features `../data/*_desc_embedding.npz`. We need to input disease model features embedding  `../data/disease_desc_embedding.npz` for disease classifications, or tissue model features embedding `../data/tissue_desc_embedding.npz` for tissue classifications.
 
-We need model files `../bins/<name_of_task>__model.pkl` for disease or tissue of intrest. For example, if you want to predict studies related to atrial fibrillation (MONDO:0004981), the path to model file is `../bins/MONDO_0004981__model.pkl`. **NOTE: when input model names, we need to subsititue semicolon ":" as underscore "_"**
+We need model files `../bins/<name_of_task>__model.pkl` for disease or tissue of interest. For example, if you want to predict studies related to atrial fibrillation (MONDO:0004981), the path to model file is `../bins/MONDO_0004981__model.pkl`. **NOTE: when input model names, we need to substitute semicolon ":" as underscore "_"**
 
-This script produces the output to  `path_to_output_directory`, which is named as `path_to_output_directory/<name_of_task>__preds.csv`. The file looks like this:
+This script produces the output to  `path_to_output_directory`, which is named as `path_to_output_directory/<name_of_task>__preds.csv`. The result file looks like this:
 
 | ID           | prob                | log2(prob/prior)    | related_words             |
 |--------------|--------------------:|--------------------:|---------------------------|
@@ -131,13 +131,13 @@ This script produces the output to  `path_to_output_directory`, which is named a
 `ID` is the ID of every instance. `prob` is the prediction probability. `log2(prob/prior)` is the probability normalized by `prior`, where `prior` represents the expected random prediction for this model. Thus, `log2(prob/prior)` indicates how much this prediction is better than random. The final column `related_words` represents words in the given text that are related to predictions. `prob` might be underestimated when very few positive instances are included during training. `log2(prob/prior)` is a good indicator of good performance. Generally `log2(prob/prior) >= 1` means trustable positive predictions.
 
 ## Training new models
-Besides making predictions using the provided models, users can also train their own models for diseases or tissues outside of our provided list. Users can also use our framework to predict any kind of labels using metadata, such as sex, sequencing platform and drug.
+Besides making predictions using the provided models, users can also train their own models for diseases or tissues outside of our provided list. Users can also use our framework to predict any kind of labels using metadata, such as sex, sequencing platform or drug.
 
 We also provide `../demo/demo_training.sh` as example to demonstrate using *txt2onto 2.0* to train new model from scratch.
 
-Again, assume we are running code in the `src` folder. We will demonstrate how to training a model using metadata from stratch.
+Again, assume we are running code under the `src` folder. We will demonstrate how to training a model using metadata from scratch.
 
-### Step 1: Prepare input
+### Step 1: Prepare user input
 To train a new model, we first need metadata for training. The preparation process is exactly the same as in **Step 1: Prepare user input** from the **Making predictions using provided models** section. Users can also refer to `../demo/disease_desc.tsv` for detail, which is the prepared metadata used for training disease models from the paper.
 
 Similarly, we need corresponding ID files for training data, one ID per line. Please refer to `../demo/disease_ID.tsv` for example.
@@ -154,7 +154,7 @@ In this file, each column is an ontology, and each row is an instance. Each cell
 | GSE93624  | 1             | -1            | -1            |
 | GSE127948 | 1             | -1            | -1            |
 
-If users want to predict labels other than tissue or disease. The column does not have to be ontology. For example, the gold standard for sex prediction looks like:
+If users want to predict labels other than tissue or disease. The column does not have to be ontology. For example, the gold standard for sex prediction could be:
 |      | sex |
 |-----------|--------------:|
 | GSE85493  | 1             |
@@ -185,7 +185,7 @@ We generate embedding for preprocessed text `path_to_processed_description_file`
 ### Step 4: Prepare train inputs
 In this step, we need to prepare training input for a classification task. Users can loop this process to prepare input for every task.
 ```
-python ../src/input.py \
+python input.py \
 -gs <path_to_gold_standard.csv.gz> \
 -onto <name_of_task> \
 -text <path_to_processed_description_file.tsv> \
@@ -193,10 +193,10 @@ python ../src/input.py \
 -out <path_to_output_directory>
 ```
 We need input from users:
-- `-gs`  the gold standard files prepared in **Step 1: Prepare input** in this section.
+- `-gs`  the gold standard files prepared in **Step 1: Prepare user input** in this section.
 - `-onto` is the name of the task for which you want to generate input. It has to be one of the column name in `path_to_gold_standard.csv.gz`.
 - `-text` is processed training text prepared in **Step 2: Preprocess input text for training data** in this section.
-- `-id` is the ID of the training instances prepared in **Step 1: Prepare input** in this section.
+- `-id` is the ID of the training instances that need to be provided by users in **Step 1: Prepare input** in this section.
 
 This script produces the output to `path_to_output_directory`. The output file is `path_to_output_directory/<name_of_task>__train_input.tsv`. The output file contains the ID, label, and text required for training a model. The prepared input file is formatted in the following structure:
 ```
@@ -209,13 +209,13 @@ ID4  1  TEXT
 where the first column is ID, the second column is label and the last column is the processed text. 
 
 ### Step 5: Train model
-Finally, we train the model using logistic regression with word as features. 
+Finally, we train the model using prepared input. We train it using logistic regression with word as features. 
 ```
-python ../src/train.py \
--input <name_of_task>__train_input.tsv \
+python train.py \
+-input <path_to_prepared_train_input.tsv> \
 -out <path_to_output_directory>
 ```
-It takes prepared text `<name_of_task>__train_input.tsv` as input, then output trained model to output directory `path_to_output_directory`, the output model will be `<path_to_output_directory>/<name_of_task>__model.pkl`.
+It takes prepared text `path_to_prepared_train_input.tsv` as input, then output trained model to output directory `path_to_output_directory`, the output model will be `<path_to_output_directory>/<name_of_task>__model.pkl`.
 
 # Overview of the repository
 Here, we list the files we included in the repository.
@@ -262,13 +262,13 @@ For support, please contact Hao Yuan at yuanhao5@msu.edu.
 All general inquiries should be directed to [Arjun Krishnan](www.thekrishnanlab.org) at arjun.krishnan@cuanschutz.edu
 
 ### License
-This repository and all its contents are released under the [Creative Commons License: Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode); See [LICENSE.md](https://github.com/krishnanlab/txt2onto/blob/main/LICENSE).
+This repository and all its contents are released under the [Creative Commons License: Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode); See [LICENSE](https://github.com/krishnanlab/txt2onto2/blob/main/LICENSE).
 
-<!-- ### Citation
-If you use this work, please cite:  -->
+### Citation
+If you use this work, please cite: 
 
-<!-- ### Funding
-This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and MSU Rasmussen Doctoral Recruitment Award and Engineering Distinguished Fellowship to NTH. -->
+### Funding
+This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and MSU Rasmussen Doctoral Recruitment Award and Engineering Distinguished Fellowship to NTH.
 
 ### Acknowledgements
 The authors would like to thank Keenan Manpearl for valuable suggestions on the repo documents and testing the code. We also thank all members of the [Krishnan Lab](www.thekrishnanlab.org) for valuable discussions and feedback on the project.
