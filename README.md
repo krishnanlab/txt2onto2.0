@@ -262,7 +262,7 @@ For support, please contact Hao Yuan at yuanhao5@msu.edu.
 All general inquiries should be directed to [Arjun Krishnan](https://www.thekrishnanlab.org/) at arjun.krishnan@cuanschutz.edu
 
 ### License
-This repository and all its contents are released under the [Creative Commons License: Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode); See [LICENSE](https://github.com/krishnanlab/txt2onto2/blob/main/LICENSE).
+This repository and all its contents are released under the [Creative Commons License: Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode); See [LICENSE](https://github.com/krishnanlab/txt2onto2.0/blob/main/LICENSE).
 
 ### Citation
 If you use this work, please cite: 
