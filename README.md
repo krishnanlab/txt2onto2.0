@@ -117,7 +117,7 @@ This script takes following files that generated from previous steps:
 
 We also need embeddings for disease or tissue model features `../data/*_desc_embedding.npz`. We need to input disease model features embedding  `../data/disease_desc_embedding.npz` for disease classifications, or tissue model features embedding `../data/tissue_desc_embedding.npz` for tissue classifications.
 
-We need model files `../bins/<name_of_task>__model.pkl` for disease or tissue of interest. For example, if you want to predict studies related to atrial fibrillation (MONDO:0004981), the path to model file is `../bins/MONDO_0004981__model.pkl`. **NOTE: when input model names, we need to substitute semicolon ":" as underscore "_"**
+We need model files `../bins/<name_of_task>__model.pkl` for disease or tissue of interest. For example, if you want to predict studies related to atrial fibrillation (MONDO:0004981), the path to model file is `../bins/MONDO_0004981__model.pkl`. **NOTE: when inputting model names, we need to substitute semicolon ":" as underscore "_"**
 
 This script produces the output to  `path_to_output_directory`, which is named as `path_to_output_directory/<name_of_task>__preds.csv`. The result file looks like this:
 
