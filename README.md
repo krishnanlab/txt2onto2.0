@@ -23,7 +23,7 @@ Install environments
 ```
 git clone https://github.com/krishnanlab/txt2onto2.0.git
 cd txt2onto2.0
-conda create -n txt2onto2 python==3.12.3
+conda create -n txt2onto2 python==3.11.3
 conda activate txt2onto2
 pip install -r requirements.txt
 ```
