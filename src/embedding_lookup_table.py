@@ -112,7 +112,7 @@ if __name__ == '__main__':
                         type=str)
     parser.add_argument("-batch_size",
                         help="batch size of text when using gpu inference embddings",
-                        default=5000,
+                        default=2000,
                         type=int)
     parser.add_argument("-ner",
                         help="if input entitiy is phrase",
