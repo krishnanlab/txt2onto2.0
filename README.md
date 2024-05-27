@@ -271,4 +271,4 @@ If you use this work, please cite:
 This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and MSU Rasmussen Doctoral Recruitment Award and Engineering Distinguished Fellowship to NTH.
 
 ### Acknowledgements
-The authors would like to thank Keenan Manpearl for valuable suggestions on the repo documents and testing the code. We also thank all members of the [Krishnan Lab](www.thekrishnanlab.org) for valuable discussions and feedback on the project.
+The authors would like to thank Keenan Manpearl for valuable suggestions on the repo documents and testing the code. We also thank all members of the [Krishnan Lab](https://www.thekrishnanlab.org/) for valuable discussions and feedback on the project.
