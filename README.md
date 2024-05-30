@@ -268,7 +268,7 @@ This repository and all its contents are released under the [Creative Commons Li
 If you use this work, please cite: 
 
 ### Funding
-This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and MSU Rasmussen Doctoral Recruitment Award and Engineering Distinguished Fellowship to NTH.
+This work was primarily supported by the National Science Foundation grant 2328140 to Arjun Krishnan.
 
 ### Acknowledgements
 The authors would like to thank Keenan Manpearl for valuable suggestions on the repo documents and testing the code. We also thank all members of the [Krishnan Lab](https://www.thekrishnanlab.org/) for valuable discussions and feedback on the project.
