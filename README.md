@@ -7,7 +7,7 @@ Here, we present *txt2onto 2.0* a Python utility for classifying metadata of sam
 Here is a summary of comparison between *txt2onto 1.0* and *2.0*
 
 | Feature | *txt2onto 1.0* | *txt2onto 2.0* |
-|----------|----------|----------|
+|:----------|:----------|:----------|
 | Tissue classification (UBERON ontology) | yes | yes |
 | Number of tissue classification models | 296 | 402 |
 | Cell type classification (CL ontology) | yes | yes |
