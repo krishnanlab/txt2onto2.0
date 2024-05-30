@@ -38,7 +38,7 @@ We also provide `../demo/demo_prediction.sh` as example to demonstrate using *tx
 To figure out what models are available in *txt2onto 2.0*. Users can check `../data/disease_model_stats.csv` for disease models and `../data/tissue_model_stats.csv` for tissue and cell type models. Here we show few beginning lines of the table:
 
 | ID           | name                                          | log2(auprc/prior) | num_of_pos | pred_words | coef |
-|--------------|-----------------------------------------------|-------------------|------------| -----------| ------------|
+|:--------------|:-----------------------------------------------|-------------------:|------------:|:-----------|------------:|
 | MONDO:0000167 | Huntington disease and related disorders      | 5.841352896201352 | 35         | hd,huntingtons,htt,disease | 6.583,5.902,2.170,2.033 |
 | MONDO:0000248 | dengue shock syndrome                         | 9.517669388133813 | 3          | dengue,dss | 2.198,1.272 |
 | MONDO:0000270 | lower respiratory tract disorder              | 3.9844081310560657| 170        | lung,asthma,nsclc,airway | 12.366,4.467,3.501,3.130 |
@@ -122,7 +122,7 @@ We need model files `../bins/<name_of_task>__model.pkl` for disease or tissue of
 This script produces the output to  `path_to_output_directory`, which is named as `path_to_output_directory/<name_of_task>__preds.csv`. The result file looks like this:
 
 | ID           | prob                | log2(prob/prior)    | related_words             |
-|--------------|--------------------:|--------------------:|---------------------------|
+|:--------------|--------------------:|--------------------:|:---------------------------|
 | NCT04496336  | 0.7842907444469499  | 8.686026609365644   | atrial                    |
 | NCT01970969  | 0.743665375713356   | 8.609291637672486   | atrial                    |
 | NCT01796080  | 0.5746653363470876  | 8.237360063179139   | atrial, supraventricular  |
@@ -147,7 +147,7 @@ Additionally, we need to prepare ground truth labels, which specifies the ground
 In this file, each column is an ontology, and each row is an instance. Each cell corresponds to the category of the instance, either positive (1), negative (-1), or unknown (0). Please check `../demo/disease_labels.csv.gz` for details, which is the gold standard used in the paper. Here is a snapshot of the gold standard file:
 
 |      | MONDO:0000001 | MONDO:0000004 | MONDO:0000005 |
-|-----------|--------------:|--------------:|--------------:|
+|:-----------|--------------:|--------------:|--------------:|
 | GSE85493  | 1             | -1            | -1            |
 | GSE74016  | 1             | -1            | -1            |
 | GSE135461 | 1             | 0             | -1            |
@@ -156,7 +156,7 @@ In this file, each column is an ontology, and each row is an instance. Each cell
 
 If users want to predict labels other than tissue or disease. The column does not have to be ontology. For example, the gold standard for sex prediction could be:
 |      | sex |
-|-----------|--------------:|
+|:-----------|--------------:|
 | GSE85493  | 1             |
 | GSE74016  | -1            |
 | GSE135461 | 0             |
@@ -200,7 +200,7 @@ We need input from users:
 
 This script produces the output to `path_to_output_directory`. The output file is `path_to_output_directory/<name_of_task>__train_input.tsv`. The output file contains the ID, label, and text required for training a model. The prepared input file is formatted in the following structure:
 |     ID   | label    |text         |
-|----------|---------:|-------------|
+|:----------|---------:|:-------------|
 | ID1      | 1        |TEXT         |
 | ID2      | 0        |TEXT         |
 | ID3      | 0        |TEXT         |
