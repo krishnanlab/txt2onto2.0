@@ -266,6 +266,7 @@ This repository and all its contents are released under the [Creative Commons Li
 
 ### Citation
 If you use this work, please cite:
+
 Yuan, Hao, Parker Hicks, Mansooreh Ahmadian, Kayla Johnson, Lydia Valtadoros, and Arjun Krishnan. "Annotating publicly-available samples and studies using interpretable modeling of unstructured metadata." bioRxiv (2024): 2024-06.
 
 ### Funding
