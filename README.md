@@ -265,7 +265,8 @@ All general inquiries should be directed to [Arjun Krishnan](https://www.thekris
 This repository and all its contents are released under the [Creative Commons License: Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode); See [LICENSE](https://github.com/krishnanlab/txt2onto2.0/blob/main/LICENSE).
 
 ### Citation
-If you use this work, please cite: 
+If you use this work, please cite:
+Yuan, Hao, Parker Hicks, Mansooreh Ahmadian, Kayla Johnson, Lydia Valtadoros, and Arjun Krishnan. "Annotating publicly-available samples and studies using interpretable modeling of unstructured metadata." bioRxiv (2024): 2024-06.
 
 ### Funding
 This work was primarily supported by the National Science Foundation grant 2328140 to Arjun Krishnan.
